@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -14,8 +15,8 @@ body {
 
 .wrapper {
   position: relative;
-  width: 100%;
-  min-width: 940px + 20px;
+  width: 95%;
+  // min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }

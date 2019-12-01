@@ -8,14 +8,26 @@
   font-family: Ubuntu;
   font-size: 14px;
   font-weight: 300;
+
 }
 
 .order-form__title {
   margin-bottom: 5px;
 }
+
+.order-form__elem {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.order-form__col {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
 .order-form__row {
   display: flex;
-  width: 50%; 
   margin-bottom: 15px;
 }
 

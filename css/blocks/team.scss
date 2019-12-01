@@ -51,6 +51,10 @@
   }
 }
 
+.team__item--active .team__hover {
+  max-height: 200px;
+}
+
 //  .team__item {
 //   &:hover {
 //     .team__hover {
@@ -71,8 +75,8 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 24.01px;
-  // overflow: hidden;
-  // height: 0;
+  overflow: hidden;
+  max-height: 0;
 }
 
 .team__position {
