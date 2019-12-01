@@ -1,0 +1,39 @@
+.promo__section {
+  background-image: url(../../pic/content/bg-promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+}
+
+.promo__container {
+  display: flex;
+  align-items: center;
+}
+
+.promo__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__second-title {
+  font-family: Lifehack;
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 65px;
+  color: white;
+}
+
+.title--black {
+  color: #2f3234;
+}
+
+.features__text {
+  opacity: 0.8;
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24.02px;
+}

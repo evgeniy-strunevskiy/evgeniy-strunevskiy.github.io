@@ -1,0 +1,35 @@
+body {
+  background: gray;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+display: flex;
+align-items: center;
+margin-right: 15px;
+
+  &:after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    display: block;
+    margin-left: 18px;
+  }
+  
+  &:nth-last-child(2) {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.nav__link {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}

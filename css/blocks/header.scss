@@ -1,0 +1,18 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 12px;
+  z-index: 10;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__link  {
+font-family: Ubuntu;
+font-size: 13px;
+font-weight: 500;
+}
