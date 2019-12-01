@@ -468,6 +468,11 @@ template {
   font-weight: 300;
   line-height: 24.02px; }
 
+.promo-scroll__arrow-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 0; }
+
 .header {
   position: absolute;
   width: 100%;
@@ -632,7 +637,8 @@ body {
   background-size: cover;
   background-position: center center;
   display: block;
-  position: relative; }
+  position: relative;
+  padding: 14% 3%; }
 
 .accordeon-menu__btn {
   width: 80px;
@@ -705,7 +711,10 @@ body {
   bottom: 0;
   left: 0;
   background: black;
-  color: white;
+  color: white; }
+
+.header_container {
+  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,7 +723,16 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300; }
+
+.contacts__adress {
+  margin-bottom: 10px; }
+
+.contacts__number {
+  color: orange; }
 
 .social__list {
   display: -webkit-box;
@@ -728,7 +746,9 @@ body {
 .social__img {
   width: 30px;
   height: 30px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .team_section {
   background-image: url(../../pic/content/bg-team.png);
@@ -754,6 +774,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 10px;
   font-family: Gagalin;
   font-size: 14px;
   font-weight: 400;
@@ -771,6 +792,15 @@ body {
 .team__list {
   color: white; }
 
+.team__item {
+  margin-bottom: 10px; }
+  .team__item:last-child {
+    margin-bottom: 30px; }
+
+.team__name-desc {
+  margin-left: 10px;
+  width: 56%; }
+
 .team__hover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,7 +814,8 @@ body {
   line-height: 24.01px; }
 
 .team__position {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 13px; }
 
 .team__img {
   border-radius: 50%; }
@@ -801,6 +832,9 @@ body {
   font-family: Ubuntu;
   font-size: 14px;
   font-weight: 300; }
+
+.order-form__title {
+  margin-bottom: 5px; }
 
 .order-form__row {
   display: -webkit-box;
@@ -873,11 +907,17 @@ textarea {
   background: transparent;
   margin-right: 5px;
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 3px; }
+
+.order-form__circle--right {
+  top: 6px; }
 
 input:checked ~ .order-form__circle {
   background: orange; }
+
+.order-form__reset {
+  margin-left: 10px; }
 
 body {
   font-family: sans-serif; }

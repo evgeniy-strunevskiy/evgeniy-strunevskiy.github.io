@@ -12,7 +12,10 @@
     <header class="header">
       <div class="container header__container">
         <div class="logo">
-          <img src="./pic/icons/logo.svg" alt="">
+          <!-- <img src="./pic/icons/logo.svg" alt=""> -->
+          <svg class="logo__svg" width='100px' height='75px'> 
+            <use xlink:href='./pic/icons/sprite.svg#phone'></use>
+          </svg>
         </div>
             <nav class="nav">
               <ul class="nav__list">
@@ -73,6 +76,11 @@
           </h1>
         </div>
       </div>
+      <a href="#" class="promo-scroll__btn" aria-label="Следующая страница">
+        <svg class="promo-scroll__arrow-scroll" width='100px' height='75px'> 
+          <use xlink:href='./pic/icons/sprite.svg#arrow-scroll'></use>
+        </svg>
+      </a>
     </section>
 
     <section class="section features__section">
@@ -84,7 +92,10 @@
           <ul class="features__list">
             <li class="features__item">
               <div class="features__pic">
-                <img src="./pic/icons/meat.svg" alt="" class="features__img">
+                <!-- <img src="./pic/icons/meat.svg" alt="" class="features__img"> -->
+                <svg class="logo__svg" width='100px' height='90px'> 
+                  <use xlink:href='./pic/icons/sprite.svg#meat'></use>
+                </svg>
               </div>
               <div class="features__title">100% свежее мясо</div>
               <div class="features__text">
@@ -93,7 +104,10 @@
             </li>
             <li class="features__item">
               <div class="features__pic">
-                <img src="./pic/icons/hand.svg" alt="" class="features__img">
+                <!-- <img src="./pic/icons/hand.svg" alt="" class="features__img"> -->
+                <svg class="logo__svg" width='100px' height='90px'> 
+                  <use xlink:href='./pic/icons/sprite.svg#hand'></use>
+                </svg>
               </div>
               <div class="features__title">100% свежее мясо</div>
               <div class="features__text">
@@ -102,7 +116,10 @@
             </li>
             <li class="features__item">
               <div class="features__pic">
-                <img src="./pic/icons/natural.svg" alt="" class="features__img">
+                <!-- <img src="./pic/icons/natural.svg" alt="" class="features__img"> -->
+                <svg class="logo__svg" width='100px' height='90px'> 
+                  <use xlink:href='./pic/icons/sprite.svg#natural'></use>
+                </svg>
               </div>
               <div class="features__title">100% свежее мясо</div>
               <div class="features__text">
@@ -226,7 +243,7 @@
               </h3>
               <div class="team__hover">
                 <div class="team__pic">
-                  <img src="./pic/team/rich.png" alt="" class="team__img">
+                  <img src="./pic/team/aphex1.png" alt="" class="team__img">
                 </div>
                 <div class="team__name-desc">
                   <div class="team__position">
@@ -240,11 +257,11 @@
             </li>
             <li class="team__item">
               <h3 class="team__name">
-                <a href="#" class="team__link">ДАНИЭЛЬ РЭДКЛИФ</a>
+                <a href="#" class="team__link">РИЧАРД ДЖЕЙМС</a>
               </h3>
               <div class="team__hover">
                 <div class="team__pic">
-                  <img src="./pic/team/rich.png" alt="" class="team__img">
+                  <img src="./pic/team/aphex1.png" alt="" class="team__img">
                 </div>
                 <div class="team__name-desc">
                   <div class="team__position">
@@ -258,11 +275,11 @@
             </li>
             <li class="team__item">
               <h3 class="team__name">
-                <a href="#" class="team__link">ДАНИЭЛЬ РЭДКЛИФ</a>
+                <a href="#" class="team__link">ДЖЕЙК ФИНН</a>
               </h3>
               <div class="team__hover">
                 <div class="team__pic">
-                  <img src="./pic/team/rich.png" alt="" class="team__img">
+                  <img src="./pic/team/aphex1.png" alt="" class="team__img">
                 </div>
                 <div class="team__name-desc">
                   <div class="team__position">
@@ -276,11 +293,11 @@
             </li>
             <li class="team__item">
               <h3 class="team__name">
-                <a href="#" class="team__link">ДАНИЭЛЬ РЭДКЛИФ</a>
+                <a href="#" class="team__link">НИКОЛАЙ ИВАНОВ</a>
               </h3>
               <div class="team__hover">
                 <div class="team__pic">
-                  <img src="./pic/team/rich.png" alt="" class="team__img">
+                  <img src="./pic/team/aphex1.png" alt="" class="team__img">
                 </div>
                 <div class="team__name-desc">
                   <div class="team__position">
@@ -412,21 +429,9 @@
                 <label for="pay" class="order-form__block" class="order-form__pay">
                   <input type="radio" name="money" id="pay" class="order-form__surrender">
                   Оплата по карте
-                  <div class="order-form__circle"></div>
+                  <div class="order-form__circle order-form__circle--right"></div>
                 </label>
               </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
               <div class="order-form__row">
                 <label for="call" class="order-form__block">
@@ -435,9 +440,9 @@
                 </label>
               </div>
             </div>
-            <div class="order-form__row">
+            <div class="order-form__row ">
               <button class="btn">ЗАКАЗАТЬ</button>
-              <button type="reset">очистить</button>
+              <button type="reset" class="order-form__reset">очистить</button>
             </div>
 
           </form>
@@ -447,40 +452,54 @@
 
     <section class="section mape__section">
       <footer class="footer">
-        <div class="contacts">
-            <div class="contacts__adress">
-              Санкт-Петербург, ул.Бабушкина, д.12/1, 15
-            </div>
-            <div class="contacts__number">
-              +7 (812) 377-13-77
+        <div class="container header_container">
+          <div class="contacts">
+              <div class="contacts__adress">
+                Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+              </div>
+              <div class="contacts__number">
+                +7 (812) 377-13-77
+              </div>
+          </div>
+          <div class="social">
+              <div class="social__wrapper">
+                <ul class="social__list">
+                  <li class="social elem">
+                    <a href="" class="social__link">
+                      <!-- <img src="./pic/icons/vk.svg" alt=""class="social__img"> -->
+                      <svg class="logo__svg" width='100px' height='90px'> 
+                        <use xlink:href='./pic/icons/sprite.svg#vk'></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social elem">
+                    <a href="" class="social__link">
+                      <!-- <img src="./pic/icons/fb.svg" alt=""class="social__img"> -->
+                      <svg class="logo__svg" width='100px' height='90px'> 
+                        <use xlink:href='./pic/icons/sprite.svg#hand'></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social elem">
+                    <a href="" class="social__link">
+                      <!-- <img src="./pic/icons/inst.svg" alt=""class="social__img"> -->
+                      <svg class="logo__svg" width='100px' height='90px'> 
+                        <use xlink:href='./pic/icons/sprite.svg#hand'></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social elem">
+                    <a href="" class="social__link">
+                      <!-- <img src="./pic/icons/twitter.svg" alt=""class="social__img"> -->
+                      <svg class="logo__svg" width='100px' height='90px'> 
+                        <use xlink:href='./pic/icons/sprite.svg#hand'></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
         </div>
-        <div class="social">
-            <div class="social__wrapper">
-              <ul class="social__list">
-                <li class="social elem">
-                  <a href="" class="social__link">
-                    <img src="./pic/icons/vk.svg" alt=""class="social__img">
-                  </a>
-                </li>
-                <li class="social elem">
-                  <a href="" class="social__link">
-                    <img src="./pic/icons/fb.svg" alt=""class="social__img">
-                  </a>
-                </li>
-                <li class="social elem">
-                  <a href="" class="social__link">
-                    <img src="./pic/icons/inst.svg" alt=""class="social__img">
-                  </a>
-                </li>
-                <li class="social elem">
-                  <a href="" class="social__link">
-                    <img src="./pic/icons/twitter.svg" alt=""class="social__img">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
       </footer>
     </section>
   </div>

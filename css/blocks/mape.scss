@@ -13,10 +13,30 @@
   left: 0;
   background: black;
   color: white;
+}
+
+.header_container {
+  padding: 15px 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
 }
+
+
+.contacts__adress {
+  margin-bottom: 10px;
+}
+
+
+.contacts__number {
+  color: orange;
+}
+
 
 .social__list {
   display: flex;
@@ -31,4 +51,6 @@
   width: 30px;
   height: 30px;
   margin-left: 10px;
+  filter: grayscale(100%);
 }
+
