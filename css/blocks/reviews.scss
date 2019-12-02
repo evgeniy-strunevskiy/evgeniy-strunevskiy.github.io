@@ -43,9 +43,14 @@
   background-color: rgba(black, 0.3);
   transition: opacity .4s;
   padding: 20% 9%;
-
+  
+  @include tablets {
+    text-align: center;
+  }
+  
   &:hover {
     opacity: 1;
+
   }
 
   @include phones {

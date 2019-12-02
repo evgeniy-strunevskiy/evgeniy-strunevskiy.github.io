@@ -23,6 +23,8 @@
 
 .features__item {
   flex: 1;
+  margin-left: 2%;
+
   @include phones {
     display: flex;
     align-items: normal;

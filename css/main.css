@@ -510,9 +510,17 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .header__container {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; } }
 
-.logo__svg {
-  max-width: 100%; }
+@media screen and (max-width: 768px) {
+  .logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; } }
 
 .nav__list {
   display: -webkit-box;
@@ -589,7 +597,8 @@ template {
 .features__item {
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  margin-left: 2%; }
   @media screen and (max-width: 480px) {
     .features__item {
       display: -webkit-box;
@@ -663,6 +672,9 @@ template {
   -o-transition: opacity .4s;
   transition: opacity .4s;
   padding: 20% 9%; }
+  @media screen and (max-width: 768px) {
+    .reviews__hover {
+      text-align: center; } }
   .reviews__hover:hover {
     opacity: 1; }
   @media screen and (max-width: 480px) {
@@ -833,6 +845,11 @@ template {
 .social__link {
   margin-right: 0.625rem; }
 
+.social__svg {
+  fill: #585858; }
+  .social__svg:hover {
+    fill: white; }
+
 .team_section {
   background-image: url(../../pic/content/bg-team.png);
   background-repeat: no-repeat;
@@ -898,8 +915,8 @@ template {
   .team__item--active .team__name::before {
     display: block;
     border: 0.5rem solid transparent;
-    border-top-color: yellow;
-    border-bottom-width: 0rem;
+    border-bottom-color: yellow;
+    border-top-width: 0rem;
     border-right-width: 0.4375rem;
     border-left-width: 0.4375rem;
     margin-right: 0.3125rem; }
@@ -953,6 +970,12 @@ template {
   font-family: Ubuntu;
   font-size: 0.875rem;
   font-weight: 300; }
+
+@media screen and (max-width: 480px) {
+  .title_form {
+    text-align: center;
+    line-height: 5rem;
+    margin-bottom: 1.875rem; } }
 
 .order-form__title {
   margin-bottom: 0.3125rem; }
@@ -1130,3 +1153,29 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+.hamburger {
+  width: 25px;
+  height: 4px;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+  display: none;
+  margin-left: 15px; }
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block; } }
+  .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 4px;
+    border-radius: 5px;
+    background: white;
+    position: absolute; }
+  .hamburger::after {
+    top: 100%;
+    margin-top: 5px; }
+  .hamburger::before {
+    bottom: 100%;
+    margin-bottom: 5px; }

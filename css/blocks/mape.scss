@@ -67,3 +67,11 @@
   margin-right: rem(10px);
 }
 
+.social__svg {
+  fill: #585858;
+
+  &:hover {
+    fill: white;
+  }
+}
+

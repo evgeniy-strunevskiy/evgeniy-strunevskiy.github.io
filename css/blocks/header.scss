@@ -9,8 +9,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include tablets {
+    justify-content: flex-end;
+  }
 }
 
-.logo__svg {
-  max-width: 100%;
+.logo {
+  @include tablets {
+    flex: 1;
+  }
 }

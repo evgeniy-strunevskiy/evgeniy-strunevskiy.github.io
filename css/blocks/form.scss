@@ -11,6 +11,14 @@
 
 }
 
+.title_form {
+  @include phones {
+    text-align: center;
+    line-height: rem(80px);
+    margin-bottom: rem(30px);
+  }
+}
+
 .order-form__title {
   margin-bottom: rem(5px);
 }
