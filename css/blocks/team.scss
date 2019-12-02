@@ -53,6 +53,21 @@
 
 .team__item {
   margin-bottom: rem(10px);
+
+  &--active .team__name .team__link{
+    color: orange;
+  }
+
+  &--active .team__name::before {
+    display: block;
+    border: rem(8px) solid transparent;
+    border-top-color: yellow;
+    border-bottom-width: rem(0px);
+    border-right-width: rem(7px);
+    border-left-width: rem(7px);
+    margin-right: rem(5px);    
+  } 
+
   &:last-child {
     margin-bottom: rem(30px);
   }
@@ -62,13 +77,6 @@
   max-height: rem(200px);
 }
 
-//  .team__item {
-//   &:hover {
-//     .team__hover {
-//       max-height: rem(500px);
-//     }
-//   }  
-//  }
 
 .team__name-desc {
   margin-left: rem(10px);

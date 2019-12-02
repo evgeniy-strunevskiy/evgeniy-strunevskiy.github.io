@@ -23,11 +23,15 @@
 
 .features__item {
   flex: 1;
+  @include phones {
+    display: flex;
+  }
 }
 
 .features__pic {
   margin-bottom: rem(20px);
 }
+
 
 .features__title {
   color: #2f3234;

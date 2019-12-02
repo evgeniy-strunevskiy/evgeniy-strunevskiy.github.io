@@ -97,9 +97,11 @@
                   <use xlink:href='./pic/icons/sprite.svg#meat'></use>
                 </svg>
               </div>
-              <div class="features__title">100% свежее мясо</div>
-              <div class="features__text">
-                  Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+              <div class="features__content">
+                <div class="features__title">100% свежее мясо</div>
+                <div class="features__text">
+                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                </div>
               </div>
             </li>
             <li class="features__item">
@@ -109,9 +111,11 @@
                   <use xlink:href='./pic/icons/sprite.svg#hand'></use>
                 </svg>
               </div>
-              <div class="features__title">100% свежее мясо</div>
-              <div class="features__text">
-                  Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+              <div class="features__content">
+                <div class="features__title">100% свежее мясо</div>
+                <div class="features__text">
+                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                </div>
               </div>
             </li>
             <li class="features__item">
@@ -121,9 +125,11 @@
                   <use xlink:href='./pic/icons/sprite.svg#natural'></use>
                 </svg>
               </div>
-              <div class="features__title">100% свежее мясо</div>
-              <div class="features__text">
-                  Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+              <div class="features__content">
+                <div class="features__title">100% свежее мясо</div>
+                <div class="features__text">
+                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                </div>
               </div>
             </li>
           </ul>
@@ -405,23 +411,40 @@
                 </label>
               </div>
               <div class="order-form__row">
-                <label for="surrender" class="order-form__block order-form__block--circle">
+
+
+
+                <label for="surrender" class="order-form__block order-form__block-radio">
                   <input type="radio" name="money" id="surrender" class="order-form__surrender">
-                  Потребуется сдача
                   <div class="order-form__circle"></div>
+                  <div class="order-form__radio-text">
+                      Потребуется сдача
+                  </div>
                 </label>
-                <label for="pay" class="order-form__block" class="order-form__pay">
+
+                <label for="pay" class="order-form__block order-form__block-radio">
                   <input type="radio" name="money" id="pay" class="order-form__surrender">
-                  Оплата по карте
-                  <div class="order-form__circle order-form__circle--right"></div>
+                  <div class="order-form__circle"></div>
+                  <div class="order-form__radio-text">
+                      Оплата по карте
+                  </div>
                 </label>
+
+
+
               </div>
               <div class="order-form__row">
-                <label for="call" class="order-form__block">
-                  <input type="checkbox" name="" id="call">
-                  Не перезванивать
+                <label for="call" class="order-form__block order-form__block-check">
+                  <input type="checkbox" name="" id="call" class="order-form__call">
+                  <div class="order-form__square"></div>
+                  <div class="order-form__block-check">
+                    Не перезванивать
+                  </div>
                 </label>
               </div>
+
+
+
               <div class="order-form__row ">
                 <button class="btn">ЗАКАЗАТЬ</button>
                 <button type="reset" class="order-form__reset">очистить</button>
@@ -485,6 +508,33 @@
         </div>
       </footer>
     </section>
+
+    <ul class="fixed-menu">
+        <li class="fixed-menu__item fixed-menu__item--active">
+          <a class="fixed-menu__dot " href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+      </ul>
   </div>
 </body>
 </html>
