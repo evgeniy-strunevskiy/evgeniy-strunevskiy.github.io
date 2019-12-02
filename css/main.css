@@ -456,6 +456,9 @@ template {
       -ms-flex-direction: column;
       flex-direction: column; } }
 
+.promo__burger {
+  max-width: 100%; }
+
 .promo__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,14 +511,8 @@ template {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.nav__link {
-  font-family: Ubuntu;
-  font-size: 0.8125rem;
-  font-weight: 500; }
-
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none; } }
+.logo__svg {
+  max-width: 100%; }
 
 .nav__list {
   display: -webkit-box;
@@ -530,6 +527,9 @@ template {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .nav__item {
+      display: none; } }
   .nav__item:after {
     content: '';
     width: 0.25rem;
@@ -545,6 +545,11 @@ template {
   font-size: 0.8125rem;
   font-weight: 500;
   color: white; }
+
+.nav__link {
+  font-family: Ubuntu;
+  font-size: 0.8125rem;
+  font-weight: 500; }
 
 .btn {
   color: white;
@@ -589,10 +594,17 @@ template {
     .features__item {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      -webkit-box-align: normal;
+      -ms-flex-align: normal;
+      align-items: normal; } }
 
 .features__pic {
   margin-bottom: 1.25rem; }
+
+@media screen and (max-width: 480px) {
+  .features__content {
+    margin-left: 3%; } }
 
 .features__title {
   color: #2f3234;
@@ -601,6 +613,9 @@ template {
   font-weight: 500;
   line-height: 1.75875rem;
   margin-bottom: 0.75rem; }
+
+.features__svg {
+  max-width: 100%; }
 
 .reviews__list {
   height: 100%;
@@ -650,12 +665,28 @@ template {
   padding: 20% 9%; }
   .reviews__hover:hover {
     opacity: 1; }
+  @media screen and (max-width: 480px) {
+    .reviews__hover {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .reviews__name {
   font-family: Gagalin;
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 8%; }
+  @media screen and (max-width: 480px) {
+    .reviews__name {
+      font-size: 1.5rem;
+      text-align: center; } }
 
 .reviews__text {
   font-family: Ubuntu;
@@ -663,6 +694,9 @@ template {
   font-weight: 300;
   line-height: 1.5rem;
   margin-bottom: 8%; }
+  @media screen and (max-width: 480px) {
+    .reviews__text {
+      display: none; } }
 
 .reviews__btn:hover {
   background: black; }
@@ -749,7 +783,7 @@ template {
   background: black;
   color: white; }
 
-.header_container {
+.footer_container {
   padding: 0.9375rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,9 +797,26 @@ template {
   font-family: Ubuntu;
   font-size: 0.875rem;
   font-weight: 300; }
+  @media screen and (max-width: 480px) {
+    .footer_container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin-bottom: 0.625rem; } }
 
 .contacts__adress {
   margin-bottom: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .contacts__adress {
+      margin-bottom: 0.3125rem; } }
 
 .contacts__number {
   color: orange; }

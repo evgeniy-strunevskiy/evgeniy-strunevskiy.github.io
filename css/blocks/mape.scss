@@ -15,7 +15,7 @@
   color: white;
 }
 
-.header_container {
+.footer_container {
   padding: rem(15px) 0;
 
   display: flex;
@@ -25,11 +25,27 @@
   font-family: Ubuntu;
   font-size: rem(14px);
   font-weight: 300;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 
+.contacts {
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+}
+
 .contacts__adress {
   margin-bottom: rem(10px);
+  
+  @include phones {
+    margin-bottom: rem(5px);
+  }
 }
 
 

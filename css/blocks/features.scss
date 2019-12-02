@@ -25,6 +25,7 @@
   flex: 1;
   @include phones {
     display: flex;
+    align-items: normal;
   }
 }
 
@@ -32,6 +33,12 @@
   margin-bottom: rem(20px);
 }
 
+.features__content {
+
+  @include phones {
+    margin-left: 3%;
+  }
+}
 
 .features__title {
   color: #2f3234;
@@ -40,4 +47,8 @@
   font-weight: 500;
   line-height: rem(28.14px);
   margin-bottom: rem(12px);
+}
+
+.features__svg {
+  max-width: 100%;
 }
