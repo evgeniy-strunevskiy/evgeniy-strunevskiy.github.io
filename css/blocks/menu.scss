@@ -10,7 +10,7 @@
 }
 
 .accordeon-menu__btn  {
-  width: 80px;
+  width: rem(80px);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -26,9 +26,9 @@
   color: yellow;
   transform-origin: 0 0;
   white-space: nowrap;
-  margin-top: -30px;
+  margin-top: rem(-30px);
   font-family: Gagalin;
-  font-size: 40px;
+  font-size: rem(40px);
   font-weight: 400;
 }
 
@@ -49,8 +49,8 @@
   
   &:hover {
     .accordeon-menu__content {
-      max-width: 540px;
-      padding: 60px 30px;
+      max-width: rem(540px);
+      padding: rem(60px) rem(30px);
       background-color: rgba(47, 50, 52, 0.9);
     }
   }
@@ -63,7 +63,7 @@
   transition: max-width .3s;
 }
 .accordeon-menu__text {
-  max-width: 540px;
+  max-width: rem(540px);
   color: white;
 
 }

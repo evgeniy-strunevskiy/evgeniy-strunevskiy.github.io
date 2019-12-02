@@ -10,6 +10,11 @@
   height: 50%;
   position: relative;
   filter: grayscale(100%);
+
+  @include tablets {
+    flex-basis: 50%;
+    height: 25%;
+  }
   
   &:hover {
     .reviews__hover {
@@ -46,16 +51,16 @@
 
 .reviews__name {
   font-family: Gagalin;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
   margin-bottom: 8%;
 }
 
 .reviews__text {
   font-family: Ubuntu;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24px;
+  line-height: rem(24px);
   margin-bottom: 8%;
 }
 

@@ -10,18 +10,26 @@
 .promo__container {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .promo__title {
   display: flex;
   flex-direction: column;
+  
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .promo__second-title {
   font-family: Lifehack;
-  font-size: 65px;
+  font-size: rem(65px);
   font-weight: 500;
-  line-height: 65px;
+  line-height: rem(65px);
   color: white;
 }
 
@@ -33,9 +41,9 @@
   opacity: 0.8;
   color: #2f3234;
   font-family: Ubuntu;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24.02px;
+  line-height: rem(24.02px);
 }
 
 .promo-scroll__arrow-scroll {

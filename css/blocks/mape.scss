@@ -16,20 +16,20 @@
 }
 
 .header_container {
-  padding: 15px 0;
+  padding: rem(15px) 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   font-family: Ubuntu;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
 }
 
 
 .contacts__adress {
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }
 
 
@@ -43,11 +43,11 @@
 }
 
 .social__elem {
-  width: 5px;
-  height: 5px;
+  width: rem(5px);
+  height: rem(5px);
 }
 
 .social__link {
-  margin-right: 30px;
+  margin-right: rem(10px);
 }
 

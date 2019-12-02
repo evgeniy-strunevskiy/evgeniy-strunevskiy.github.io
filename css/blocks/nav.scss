@@ -1,5 +1,7 @@
-body {
-  background: gray;
+.nav {
+  @include tablets {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -9,16 +11,16 @@ body {
 .nav__item {
 display: flex;
 align-items: center;
-margin-right: 15px;
+margin-right: rem(15px);
 
   &:after {
     content: '';
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     background: white;
     border-radius: 50%;
     display: block;
-    margin-left: 18px;
+    margin-left: rem(18px);
   }
   
   &:nth-last-child(2) {
@@ -29,7 +31,7 @@ margin-right: 15px;
 }
 
 .nav__link {
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   color: white;
 }

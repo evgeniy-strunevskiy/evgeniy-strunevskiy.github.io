@@ -13,17 +13,17 @@ body {
 
 .wrapper {
   position: relative;
-  width: 95%;
+  width: 100%;
   min-height: 100%;
   overflow: hidden; }
 
 .container {
-  width: 940px;
+  width: rem(940px);
   margin: 0 auto; }
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +38,7 @@ body {
 .title {
   color: #f9b43b;
   font-family: Gagalin;
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: 400; }
 
 h1,
