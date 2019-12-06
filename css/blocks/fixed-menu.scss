@@ -15,14 +15,16 @@
   position: relative;
 
   &--active {
-    border-color: white;
+    border-color: $white;
   }
+}
 
+.fixed-menu__dot {
   &:before {
     content: '';
     width: 6px;
     height: 6px;
-    background-color: white;
+    background-color: $white;
     border-radius: 50%;
     position: absolute;
     top: 50%;

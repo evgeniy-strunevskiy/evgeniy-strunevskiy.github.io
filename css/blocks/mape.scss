@@ -12,7 +12,7 @@
   bottom: 0;
   left: 0;
   background: black;
-  color: white;
+  color: $white;
 }
 
 .footer_container {
@@ -50,7 +50,7 @@
 
 
 .contacts__number {
-  color: orange;
+  color: $yellow;
 }
 
 
@@ -71,7 +71,7 @@
   fill: #585858;
 
   &:hover {
-    fill: white;
+    fill: $white;
   }
 }
 

@@ -15,7 +15,7 @@ margin-right: rem(15px);
     content: '';
     width: rem(4px);
     height: rem(4px);
-    background: white;
+    background: $white;
     border-radius: 50%;
     display: block;
     margin-left: rem(18px);
@@ -32,7 +32,7 @@ margin-right: rem(15px);
 .nav__link {
   font-size: rem(13px);
   font-weight: 500;
-  color: white;
+  color: $white;
 }
 
 .nav__link  {
