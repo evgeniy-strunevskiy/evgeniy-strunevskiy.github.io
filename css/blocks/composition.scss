@@ -1,0 +1,71 @@
+.composition {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  background: #e45028;
+  color: #2f3234;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.composition__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.composition__title {
+  color: $white;
+  font-family: Gagalin;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+
+  margin-top: 8px;
+}
+
+.composition__drop-table {
+  font-family: Ubuntu;
+  font-size: 14px;
+  
+  position: absolute;
+  top: 0;
+  left: 90px;
+  background: rgba($white, .9);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.composition__list {
+  display: table;
+  padding: 10px;
+}
+
+.composition__elem {
+  display: table-row;
+}
+
+.composition__icon,
+.composition__text,
+.composition__weght {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+  padding: 10px;
+}
+
+.composition__text {
+  font-weight: bold;
+  padding: 10px 70px 10px 10px;
+  text-align: left;
+}
+
+.composition__weght {
+  text-align: right;
+}
