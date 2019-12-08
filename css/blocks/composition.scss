@@ -12,6 +12,13 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  &:hover {
+    .composition__drop-table {
+      left: 90px;
+      opacity: 1;
+    }  
+  }
 }
 
 .composition__btn {
@@ -36,10 +43,12 @@
   
   position: absolute;
   top: 0;
-  left: 90px;
+  left: 1000px;
   background: rgba($white, .9);
   padding: 10px;
   border-radius: 5px;
+  opacity: 0;
+  transition: opacity .3s;
 }
 
 .composition__list {
