@@ -1,4 +1,4 @@
-.team_section {
+.team {
   background-image: url(../../pic/content/bg-team.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +33,7 @@
   font-family: Gagalin;
   font-size: rem(14px);
   font-weight: 400;
-  line-height: rem(28.13px);
+  line-height: rem(28px);
 
   @include tablets {
     justify-content: center;
@@ -93,7 +93,7 @@
   font-family: Ubuntu;
   font-size: rem(14px);
   font-weight: 300;
-  line-height: rem(24.01px);
+  line-height: rem(24px);
   overflow: hidden;
   max-height: 0;
 

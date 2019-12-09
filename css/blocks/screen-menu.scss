@@ -1,0 +1,29 @@
+.screen-menu {
+  position: relative;
+  width: rem(25px);
+  height: rem(4px);
+  border-radius: rem(5px);
+  background: $white;
+  display: none;
+  margin-left: rem(30px);
+  @include tablets {
+    display: block;
+  }
+  &::after, &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: rem(25px);
+    height: rem(4px);
+    border-radius: rem(5px);  
+    background: $white;
+  }
+  &::after {
+    top: 100%;
+    margin-top: rem(5px);
+  }
+  &::before {
+    bottom: 100%;
+    margin-bottom: rem(5px);
+  }
+}

@@ -6,16 +6,7 @@ $orange: #e45028;
   @return $px / 16px + 0rem;
 }
 
-@mixin tablets {
-  @media screen and (max-width: 768px) {
-   @content; 
-  }
-}
-@mixin phones {
-  @media screen and (max-width: 480px) {
-   @content; 
-  }
-}
+@import './blocks/media.scss';
 
 @import './base/layout.scss';
 @import './base/normalize.scss';
@@ -31,9 +22,12 @@ $orange: #e45028;
 @import './blocks/mape.scss';
 @import './blocks/team.scss';
 @import './blocks/form.scss';
-@import './blocks/media.scss';
 @import './blocks/fixed-menu.scss';
 @import './blocks/hamburger.scss';
 @import './blocks/slider.scss';
 @import './blocks/composition.scss';
+@import './blocks/screen-menu.scss';
+@import './blocks/footer.scss';
+@import './blocks/contacts.scss';
+@import './blocks/social.scss';
 

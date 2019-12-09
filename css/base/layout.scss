@@ -52,6 +52,13 @@ body {
   &--white {
     color: $white;
   }
+  &--black {
+    color: #2f3234;
+  }
+  &--slider {
+    margin-bottom: rem(56px);
+    color: $white;
+  }
 }
 
 

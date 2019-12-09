@@ -1,17 +1,14 @@
-.promo__section {
+.promo {
   background-image: url(../../pic/content/bg-promo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
   position: relative;
-
 }
 
 .promo__container {
   display: flex;
   align-items: center;
-
   @include tablets {
     flex-direction: column;
     padding: 0 6%;
@@ -19,8 +16,7 @@
 }
 
 .promo__content {
-  margin-top: 90px;
-
+  margin-top: rem(90px);
   @include tablets {
     margin-top: 0;
   }
@@ -33,7 +29,6 @@
 .promo__title {
   display: flex;
   flex-direction: column;
-  
   @include tablets {
     text-align: center;
   }
@@ -45,21 +40,10 @@
   font-weight: 500;
   line-height: rem(65px);
   color: $white;
-  margin-top: 20px;
+  margin-top: rem(20px);
 }
 
-.title--black {
-  color: #2f3234;
-}
 
-.features__text {
-  opacity: 0.8;
-  color: #2f3234;
-  font-family: Ubuntu;
-  font-size: rem(14px);
-  font-weight: 300;
-  line-height: rem(24.02px);
-}
 
 .promo-scroll__arrow-scroll {
   position: absolute;

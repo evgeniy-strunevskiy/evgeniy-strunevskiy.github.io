@@ -5,17 +5,16 @@
   z-index: 10;
 }
 
-.header__container {
+.container_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   @include tablets {
     justify-content: flex-end;
   }
 }
 
-.logo {
+.header_logo {
   @include tablets {
     flex: 1;
   }

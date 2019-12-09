@@ -1,12 +1,5 @@
-
-
 .slider {
 background-image: linear-gradient($yellow, #eb8e38, $yellow);
-}
-
-.title--slider {
-  margin-bottom: rem(56px);
-  color: $white;
 }
 
 .slider__pic {
@@ -19,7 +12,7 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   height: rem(475px);
   width: rem(940px);
   @include tablets {
-    width: 40.75rem;
+    width: 95%;
   }
 }
 
@@ -27,12 +20,13 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   align-self: center;
 }
 
-.slider__svg--right {
-  transform: rotate(-90deg);
-}
-
-.slider__svg--left {
-  transform: rotate(90deg);
+.slider__svg {
+  &--left {
+    transform: rotate(90deg);   
+  }
+  &--right {
+    transform: rotate(-90deg); 
+  }
 }
 
 .slider__list {
@@ -61,13 +55,12 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   }
 }
 
-
 .slider__text {
   font-family: Ubuntu;
   color: $white;
-  font-size: 14px;
-  line-height: 23.97px;
-  margin-bottom: 36px;
+  font-size: rem(14px);
+  line-height: rem(24px);
+  margin-bottom: rem(36px);
 }
 
 .slider__info {
@@ -87,12 +80,11 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 font-size: rem(72px);
 }
 
-
 .slider__cal {
   font-family: Gagalin;
   color: $white;
-  height: 70px;
-  width: 50px;
+  height: rem(70px);
+  width: rem(50px);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -105,9 +97,6 @@ font-size: rem(72px);
   }
 }
 
-
-
-
 .slider__cal-digit {
   position: absolute;
   top: 28%;
@@ -115,7 +104,7 @@ font-size: rem(72px);
 }
 
 .lider__cal-text {
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 

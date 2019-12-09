@@ -1,0 +1,17 @@
+.contacts {
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+}
+
+.contacts__adress {
+  margin-bottom: rem(10px);
+  
+  @include phones {
+    margin-bottom: rem(5px);
+  }
+}
+
+.contacts__number {
+  color: $yellow;
+}

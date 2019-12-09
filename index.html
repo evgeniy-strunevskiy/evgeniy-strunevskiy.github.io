@@ -10,8 +10,8 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container header__container">
-        <div class="logo">
+      <div class="container container_header">
+        <div class="logo header_logo">
           <!-- <img src="./pic/icons/logo.svg" alt=""> -->
           <svg preserveAspectRatio="xMaxYMax meet" class="logo__svg" width='100px' height='75px'> 
             <use xlink:href='./pic/icons/sprite.svg#logo'></use>
@@ -61,12 +61,12 @@
                 </li>
               </ul>
             </nav>
-            <div class="hamburger" id="hamburger__open">
+            <div class="screen-menu" id="screen-menu__open">
             </div>
       </div>
     </header>
 
-    <section class="section promo__section">
+    <section class="section promo">
       <div class="container promo__container">
         <div class="promo__img">
           <img src="./pic/promo/burger.png" alt="" class="promo__burger">
@@ -85,7 +85,7 @@
       </a>
     </section>
 
-    <section class="section features__section">
+    <section class="section features">
       <div class="container features__container">
         <div class="features__name">
           <h2 class="title title--black">МЫ ЛУЧШИЕ</h2>
@@ -258,7 +258,7 @@
       </div>
     </section>
 
-    <section class="reviews__section">
+    <section class="reviews">
         <ul class="reviews__list">
           <li class="reviews__item">
             <div class="reviews__photo">
@@ -359,7 +359,7 @@
         </ul>
     </section>
 
-    <section class="section team_section">
+    <section class="section team">
         <div class="team__content">
           <h2 class="title">КОМАНДА</h2>
 
@@ -440,7 +440,7 @@
         </div>
     </section>
 
-    <section class="section menu__section">
+    <section class="section menu">
         <h2 class="title title--white">МЕНЮ</h2>
       
         <div class="accordeon-menu">
@@ -482,7 +482,7 @@
         </div>
     </section>
 
-    <section class="section form_section">
+    <section class="section form">
       <div class="container form_container">
         <h2 class="title title_form">ЗАКАЖИТЕ ДОСТАВКУ</h2>
         <div class="order-form">
@@ -567,7 +567,7 @@
       </div>
     </section>
 
-    <section class="section mape__section">
+    <section class="section mape">
       <footer class="footer">
         <div class="container footer_container">
           <div class="contacts">
@@ -685,9 +685,9 @@
   </div>
 
   <script>
-    const open = document.getElementById('hamburger__open');
+    const open = document.getElementById('screen-menu__open');
     const close = document.getElementById('menu-close');
-    const hamburger = document.getElementById('hamburger__menu');
+    const hamburger = document.getElementById('screen-menu__open');
 
     close.addEventListener('click', function(e){
                             hamburger.style.display = 'none';

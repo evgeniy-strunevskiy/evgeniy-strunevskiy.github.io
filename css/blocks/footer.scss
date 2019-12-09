@@ -1,0 +1,25 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  color: $white;
+}
+
+.footer_container {
+  padding: rem(15px) 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: Ubuntu;
+  font-size: rem(14px);
+  font-weight: 300;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

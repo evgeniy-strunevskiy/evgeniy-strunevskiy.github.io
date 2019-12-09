@@ -6,11 +6,9 @@
 display: flex;
 align-items: center;
 margin-right: rem(15px);
-
 @include tablets {
   display: none;
 }
-
   &:after {
     content: '';
     width: rem(4px);
@@ -19,14 +17,12 @@ margin-right: rem(15px);
     border-radius: 50%;
     display: block;
     margin-left: rem(18px);
-  }
-  
+  } 
   &:nth-last-child(2) {
     &:after {
       display: none;
     }
   }
-
 }
 
 .nav__link {

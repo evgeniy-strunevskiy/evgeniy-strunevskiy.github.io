@@ -10,12 +10,10 @@
   height: 50%;
   position: relative;
   filter: grayscale(100%);
-
   @include tablets {
     flex-basis: 50%;
     height: 25%;
   }
-  
   &:hover {
     .reviews__hover {
       opacity: 1;
@@ -43,16 +41,12 @@
   background-color: rgba(black, 0.3);
   transition: opacity .4s;
   padding: 20% 9%;
-  
   @include tablets {
     text-align: center;
   }
-  
   &:hover {
     opacity: 1;
-
   }
-
   @include phones {
     display: flex;
     flex-direction: column;
@@ -65,7 +59,6 @@
   font-size: rem(14px);
   font-weight: 400;
   margin-bottom: 8%;
-
   @include phones {
     font-size: rem(24px);
     text-align: center;
@@ -78,7 +71,6 @@
   font-weight: 300;
   line-height: rem(24px);
   margin-bottom: 8%;
-
   @include phones {
     display: none;
   }

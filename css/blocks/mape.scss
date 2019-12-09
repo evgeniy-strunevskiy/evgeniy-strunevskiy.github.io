@@ -1,77 +1,7 @@
-.mape__section {
+.mape {
   background-image: url(../../pic/content/bg-mape.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
   position: relative;
 }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: black;
-  color: $white;
-}
-
-.footer_container {
-  padding: rem(15px) 0;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-family: Ubuntu;
-  font-size: rem(14px);
-  font-weight: 300;
-
-  @include phones {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-
-.contacts {
-  @include phones {
-    margin-bottom: rem(10px);
-  }
-}
-
-.contacts__adress {
-  margin-bottom: rem(10px);
-  
-  @include phones {
-    margin-bottom: rem(5px);
-  }
-}
-
-
-.contacts__number {
-  color: $yellow;
-}
-
-
-.social__list {
-  display: flex;
-}
-
-.social__elem {
-  width: rem(5px);
-  height: rem(5px);
-}
-
-.social__link {
-  margin-right: rem(10px);
-}
-
-.social__svg {
-  fill: #585858;
-
-  &:hover {
-    fill: $white;
-  }
-}
-
