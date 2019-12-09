@@ -12,6 +12,8 @@
 }
 
 .title_form {
+    margin-bottom: 30px;
+  
   @include phones {
     text-align: center;
     line-height: rem(80px);
@@ -30,6 +32,7 @@
   @include tablets {
     display: flex;
     flex-direction: column;
+    margin: 0 rem(70px);
   }
 }
 
@@ -38,7 +41,13 @@
   margin: 0 rem(10px);
 }
 
+.order-form__row--center {
 
+  @include phones {
+    justify-content: center;
+  }
+
+}
 
 
 
@@ -49,6 +58,8 @@
   display: flex;
   margin-bottom: rem(15px);
 }
+
+
 
 .order-form__block {
   flex: 1;
@@ -71,6 +82,10 @@
 .order-form__block-radio, .order-form__block-check {
   display: flex;
   align-items: center;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .order-form__radio-text,

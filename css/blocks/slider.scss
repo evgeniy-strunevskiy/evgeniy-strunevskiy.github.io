@@ -1,9 +1,11 @@
+
+
 .slider {
 background-image: linear-gradient($yellow, #eb8e38, $yellow);
 }
 
 .title--slider {
-  margin-bottom: 56px;
+  margin-bottom: rem(56px);
   color: $white;
 }
 
@@ -14,11 +16,16 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 
 .slider_container {
   display: flex;
-  align-items: center;
-  height: 475px;
-  width: 940px;
+  height: rem(475px);
+  width: rem(940px);
+  @include tablets {
+    width: 40.75rem;
+  }
 }
 
+.slider__arrow {
+  align-self: center;
+}
 
 .slider__svg--right {
   transform: rotate(-90deg);
@@ -35,6 +42,10 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 .slider__elem {
   display: flex;
   position: relative;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__col {
@@ -42,11 +53,14 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  &:first-child {
-    margin-right: 30px;
+  &--margin {
+    margin-right: 20px;
+  }
+  @include tablets {
+    align-items: center;
   }
 }
+
 
 .slider__text {
   font-family: Ubuntu;
@@ -64,28 +78,35 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 .slider__cost {
   color: $orange;
   font-family: Gagalin;
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: 400;
-  margin-right: 29px;
+  margin-right: rem(29px);
 }
 
 .slider__cost-digit {
-font-size: 72px;
+font-size: rem(72px);
 }
 
 
 .slider__cal {
   font-family: Gagalin;
   color: $white;
-
+  height: 70px;
+  width: 50px;
   position: absolute;
   bottom: 0;
   left: 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablets {
+    top: -13%;
+    left: 73%;
+  }
 }
+
+
+
 
 .slider__cal-digit {
   position: absolute;

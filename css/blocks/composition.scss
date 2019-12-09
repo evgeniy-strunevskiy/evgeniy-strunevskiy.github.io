@@ -19,6 +19,12 @@
       opacity: 1;
     }  
   }
+
+  @include tablets {
+    top: -71px;
+    left: 30px;
+  }
+
 }
 
 .composition__btn {
@@ -43,7 +49,7 @@
   
   position: absolute;
   top: 0;
-  left: 1000px;
+  left: -1000px;
   background: rgba($white, .9);
   padding: 10px;
   border-radius: 5px;

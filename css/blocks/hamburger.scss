@@ -5,7 +5,7 @@
   border-radius: 5px;
   background: $white;
   display: none;
-  margin-left: 15px;
+  margin-left: 30px;
 
   @include tablets {
     display: block;
@@ -42,6 +42,7 @@
   background-color: rgba(47, 50, 52, .99);;
   height: 100vh;
   width: 100vw;
+  padding: 12px 25px;
 
   display: flex;
   justify-content: space-between;
@@ -49,16 +50,12 @@
   display: none;
 
   @include tablets {
-    display: flex;
+    display: block;
   }
 }
 
-.hamburger__menu {
-  padding: 12px 25px;
-}
-
 .hamburger__nav {
-
+  flex: 1;
   display: flex;
   align-items: center;
   text-align: center;
@@ -67,6 +64,10 @@
 
 
 .hamburger__menu-close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+
   transform: rotate(45deg);
   width: 25px;
   height: 25px;
@@ -96,11 +97,22 @@
   }
 }
 
+.hamburger__list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
 .hamburger__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &::after {
     content: '';
@@ -110,6 +122,12 @@
     border-radius: 50%;
     background-color: $white;
     margin-top: 15px;
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
   }
 }
 

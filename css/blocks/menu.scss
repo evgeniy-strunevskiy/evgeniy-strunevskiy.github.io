@@ -23,7 +23,7 @@
   left: 50%;
   transform: rotate(-90deg) translateY(-50%);
   z-index: 20;
-  color: $yellow;
+  color: $white;
   transform-origin: 0 0;
   white-space: nowrap;
   margin-top: rem(-30px);
@@ -65,5 +65,6 @@
 .accordeon-menu__text {
   max-width: rem(540px);
   color: $white;
+  font-family: Ubuntu;
 
 }
