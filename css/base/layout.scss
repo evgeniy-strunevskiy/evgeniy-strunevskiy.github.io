@@ -30,12 +30,15 @@ body {
 }
 
 .container {
-  max-width: rem(940px);
-  width: 95%;
   margin: 0 auto;
+  max-width: rem(960px);
+  width: 100%;
+  padding: 0 rem(10px);
 }
 
 .section {
+  position: relative;
+  width: 100vw;
   height: 100vh;
   min-height: rem(650px);
   display: flex;
@@ -49,6 +52,14 @@ body {
   font-size: rem(72px);
   font-weight: 400;
   line-height: 63.93px;
+  @include phones {
+    font-size: 50px;
+  }
+
+  &--team {
+    margin-bottom: rem(40px);
+  }
+
   &--white {
     color: $white;
   }
@@ -56,8 +67,11 @@ body {
     color: #2f3234;
   }
   &--slider {
-    margin-bottom: rem(56px);
+    margin-bottom: rem(35px);
     color: $white;
+    @include tablets {
+      text-align: center;
+    }
   }
 }
 

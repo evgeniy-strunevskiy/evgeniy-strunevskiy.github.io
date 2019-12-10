@@ -8,16 +8,41 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 }
 
 .slider_container {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: rem(475px);
   width: rem(940px);
+  width: 100%;
   @include tablets {
-    width: 95%;
   }
 }
 
-.slider__arrow {
-  align-self: center;
+.slider__arrow-left,
+.slider__arrow-right {
+  position: absolute;
+  top: 50%;
+}
+
+.slider__arrow-left {
+  left: rem(-30px);
+  @include tablets {
+    left: rem(30px);
+  }
+  @include phones {
+    left: 3px;
+  }
+}
+
+.slider__arrow-right {
+  right: rem(-30px);
+  @include tablets {
+    right: rem(30px);
+  }
+  @include phones {
+    right: 3px;
+  }
 }
 
 .slider__svg {
@@ -39,19 +64,27 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   @include tablets {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 0 12%;
+    text-align: center;
   }
 }
 
 .slider__col {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   &--margin {
-    margin-right: 20px;
+    margin-left: 30px;
+    flex: 1;
+    @include tablets {
+      margin-top: 5%;
+      margin-left: 0;
+    }
   }
   @include tablets {
     align-items: center;
+
   }
 }
 
@@ -60,7 +93,7 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   color: $white;
   font-size: rem(14px);
   line-height: rem(24px);
-  margin-bottom: rem(36px);
+  margin-bottom: rem(30px);
 }
 
 .slider__info {
@@ -86,14 +119,18 @@ font-size: rem(72px);
   height: rem(70px);
   width: rem(50px);
   position: absolute;
-  bottom: 0;
+  bottom: -11%;
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include tablets {
-    top: -13%;
+    top: -11%;
     left: 73%;
+  }
+  @include phones {
+    top: -16%;
+    left: 86%;
   }
 }
 

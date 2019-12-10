@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: -11%;
   left: 0;
   &:hover {
     .composition__drop-table {
@@ -17,8 +17,13 @@
     }  
   }
   @include tablets {
-    top: rem(-71px);
-    left: rem(30px);
+    top: -10%;
+    left: 18%;
+  }
+
+  @include phones {
+    top: -16%;
+    left: 0;
   }
 }
 

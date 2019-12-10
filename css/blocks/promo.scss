@@ -15,15 +15,16 @@
   }
 }
 
+.promo__burger {
+  width: 100%;
+}
+
 .promo__content {
   margin-top: rem(90px);
+  margin-left: rem(7px);
   @include tablets {
     margin-top: 0;
   }
-}
-
-.promo__img {
-  margin-top: 100px;
 }
 
 .promo__title {
