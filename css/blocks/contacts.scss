@@ -6,12 +6,16 @@
 
 .contacts__adress {
   margin-bottom: rem(10px);
-  
   @include phones {
-    margin-bottom: rem(5px);
+    margin-bottom: rem(10px);
   }
 }
 
+
 .contacts__number {
-  color: $yellow;
+  font-weight: bold;
+  color: #e35028;
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 }

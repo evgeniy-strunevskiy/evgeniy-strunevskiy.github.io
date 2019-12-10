@@ -1052,7 +1052,7 @@ template {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #f9b43b;
+  background: #e35028;
   opacity: 0; }
 
 .order-form__square {
@@ -1393,7 +1393,7 @@ textarea {
 .slider__cal {
   font-family: Gagalin;
   color: #ffffff;
-  height: 4.375rem;
+  height: 5rem;
   width: 3.125rem;
   position: absolute;
   bottom: -11%;
@@ -1578,10 +1578,14 @@ textarea {
   margin-bottom: 0.625rem; }
   @media screen and (max-width: 480px) {
     .contacts__adress {
-      margin-bottom: 0.3125rem; } }
+      margin-bottom: 0.625rem; } }
 
 .contacts__number {
-  color: #f9b43b; }
+  font-weight: bold;
+  color: #e35028; }
+  @media screen and (max-width: 480px) {
+    .contacts__number {
+      margin-bottom: 0.625rem; } }
 
 .social__list {
   display: -webkit-box;
