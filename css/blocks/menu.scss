@@ -3,9 +3,39 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: block;
+  display: flex;
   position: relative;
   padding: 14% 3%;
+  position: relative;
+}
+
+.accordeon-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.accordeon-menu__list {
+  display: flex;
+}
+
+.accordeon-menu__item {
+  display: flex;
+  &:hover {
+    .accordeon-menu__content {
+      max-width: rem(540px);
+      @include phones {
+        max-width: calc(100vw - 210px);
+      }
+      
+      background-color: rgba(47, 50, 52, 0.9);
+    }
+    .accordeon-menu__btn-text {
+      color: $yellow;
+    }
+  }
 }
 
 .accordeon-menu__btn  {
@@ -27,31 +57,8 @@
   white-space: nowrap;
   margin-top: rem(-30px);
   font-family: Gagalin;
-  font-size: rem(40px);
+  font-size: 40px;
   font-weight: 400;
-}
-
-.accordeon-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-}
-
-.accordeon-menu__list {
-  display: flex;
-}
-
-.accordeon-menu__item {
-  display: flex;
-  &:hover {
-    .accordeon-menu__content {
-      max-width: rem(540px);
-      padding: rem(60px) rem(30px);
-      background-color: rgba(47, 50, 52, 0.9);
-    }
-  }
 }
 
 .accordeon-menu__content {
@@ -59,8 +66,13 @@
   max-width: 0;
   transition: max-width .3s;
 }
+
 .accordeon-menu__text {
-  max-width: rem(540px);
+  width: 540px;
+  @include phones {
+    width: calc(100vw - 210px);
+  }
   color: $white;
   font-family: Ubuntu;
+  padding: rem(60px) rem(30px);
 }

@@ -748,9 +748,39 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  padding: 14% 3%; }
+  padding: 14% 3%;
+  position: relative; }
+
+.accordeon-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.accordeon-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.accordeon-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .accordeon-menu__item:hover .accordeon-menu__content {
+    max-width: 33.75rem;
+    background-color: rgba(47, 50, 52, 0.9); }
+    @media screen and (max-width: 480px) {
+      .accordeon-menu__item:hover .accordeon-menu__content {
+        max-width: calc(100vw - 210px); } }
+  .accordeon-menu__item:hover .accordeon-menu__btn-text {
+    color: #f9b43b; }
 
 .accordeon-menu__btn {
   width: 5rem;
@@ -774,31 +804,8 @@ template {
   white-space: nowrap;
   margin-top: -1.875rem;
   font-family: Gagalin;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 400; }
-
-.accordeon-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.accordeon-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.accordeon-menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .accordeon-menu__item:hover .accordeon-menu__content {
-    max-width: 33.75rem;
-    padding: 3.75rem 1.875rem;
-    background-color: rgba(47, 50, 52, 0.9); }
 
 .accordeon-menu__content {
   overflow: hidden;
@@ -808,9 +815,13 @@ template {
   transition: max-width .3s; }
 
 .accordeon-menu__text {
-  max-width: 33.75rem;
+  width: 540px;
   color: #ffffff;
-  font-family: Ubuntu; }
+  font-family: Ubuntu;
+  padding: 3.75rem 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .accordeon-menu__text {
+      width: calc(100vw - 210px); } }
 
 .mape {
   background-image: url(../../pic/content/bg-mape.png);

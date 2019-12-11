@@ -4,7 +4,7 @@ $orange: #e45028;
 
 @function rem($px) {
   @return $px / 16px + 0rem;
-}
+};
 
 @import './blocks/media.scss';
 
