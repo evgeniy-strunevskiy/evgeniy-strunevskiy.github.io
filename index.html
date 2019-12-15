@@ -1185,13 +1185,13 @@
 
     function loop(direction) {
       if (direction === "right") {
-        sliderList.appendChild(sliderList.firstChild);
+        sliderList.appendChild(sliderList.firstElementChild);
       } else {
         sliderList.insertBefore(sliderList.lastElementChild, sliderList.firstElementChild);
       }
     }
 
-    //аккордеон
+    // аккордеон
     const teamList = document.querySelector(".team__list");
     const teamItem = document.querySelectorAll(".team__item");
     
@@ -1203,6 +1203,26 @@
       e.target.closest('.team__item').classList.add("team__item--active");
     });
 
+
+    //аккордеон закрытие
+    const teamList = document.querySelector(".team__list");
+    const teamItem = document.querySelectorAll('.team__item');
+
+    for (let i = 0; i < teamItem.length; i++) {
+      teamItem[i].addEventListener("click", toggleClass)
+    }
+
+    function toggleClass(e) {
+          e.preventDefault();
+        if (!e.target.classList.contains("team__item--active")) {
+          for (let i = 0; i < teamItem.length; i++ ) {
+            teamItem[i].classList.remove("team__item--active");
+          }
+          e.target.closest.classList.add("team__item--active");
+        } else {
+          e.target.closest.classList.remove("team__item--active");
+      };
+    };
 
   </script>
 </body>
