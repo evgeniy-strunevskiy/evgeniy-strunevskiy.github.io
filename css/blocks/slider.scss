@@ -1,5 +1,5 @@
 .slider {
-background-image: linear-gradient($yellow, #eb8e38, $yellow);
+  background-image: linear-gradient($yellow, #eb8e38, $yellow);
 }
 
 .slider__pic {
@@ -15,8 +15,8 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   height: rem(475px);
   width: rem(940px);
   width: 100%;
-  @include tablets {
-  }
+
+  @include tablets {}
 }
 
 .slider__arrow-left,
@@ -27,9 +27,11 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 
 .slider__arrow-left {
   left: rem(-30px);
+
   @include tablets {
     left: rem(30px);
   }
+
   @include phones {
     left: 3px;
   }
@@ -37,9 +39,11 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 
 .slider__arrow-right {
   right: rem(-30px);
+
   @include tablets {
     right: rem(30px);
   }
+
   @include phones {
     right: 3px;
   }
@@ -47,20 +51,33 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 
 .slider__svg {
   &--left {
-    transform: rotate(90deg);   
+    transform: rotate(90deg);
   }
+
   &--right {
-    transform: rotate(-90deg); 
+    transform: rotate(-90deg);
   }
+}
+
+.slider__elems {
+  position: relative;
+  display: flex;
+  // background: green;
+  overflow: hidden;
+  // padding: 5px;
 }
 
 .slider__list {
   display: flex;
+  position: relative;
+  // background: red;
 }
 
 .slider__elem {
   display: flex;
   position: relative;
+  width: 940px;
+
   @include tablets {
     flex-direction: column;
     align-items: center;
@@ -74,14 +91,17 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   &--margin {
     margin-top: 5%;
     margin-left: 30px;
     flex: 1;
+
     @include tablets {
       margin-left: 0;
     }
   }
+
   @include tablets {
     align-items: center;
 
@@ -110,7 +130,7 @@ background-image: linear-gradient($yellow, #eb8e38, $yellow);
 }
 
 .slider__cost-digit {
-font-size: rem(72px);
+  font-size: rem(72px);
 }
 
 .slider__cal {
@@ -124,10 +144,12 @@ font-size: rem(72px);
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include tablets {
     top: -11%;
     left: 73%;
   }
+
   @include phones {
     top: -16%;
     left: 86%;
@@ -143,5 +165,3 @@ font-size: rem(72px);
 .lider__cal-text {
   font-size: rem(14px);
 }
-
-

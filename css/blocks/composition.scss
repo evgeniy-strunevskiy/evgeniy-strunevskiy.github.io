@@ -10,12 +10,14 @@
   position: absolute;
   top: -11%;
   left: 0;
+
   &:hover {
     .composition__drop-table {
       left: rem(90px);
       opacity: 1;
-    }  
+    }
   }
+
   @include tablets {
     top: -10%;
     left: 18%;

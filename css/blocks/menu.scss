@@ -27,9 +27,7 @@
     .accordeon-menu__content {
       max-width: rem(540px);
       @include phones {
-        max-width: calc(100vw - 210px);
-      }
-      
+      } 
       background-color: rgba(47, 50, 52, 0.9);
     }
     .accordeon-menu__btn-text {
