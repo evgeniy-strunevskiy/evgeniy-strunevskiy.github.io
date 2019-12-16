@@ -1161,7 +1161,7 @@
       }
     });
 
-    //Валидация данных
+    //Код формы
     const myForm = document.querySelector('#myForm');
     const sendBtn = document.querySelector('#button-send');
     const overLay = document.querySelector('.overlay');
@@ -1264,38 +1264,37 @@
       }
     }
 
-    // аккордеон
-    const teamList = document.querySelector(".team__list");
-    const teamItem = document.querySelectorAll(".team__item");
-
-    teamList.addEventListener('click', function (e) {
-      e.preventDefault();
-      for (let i = 0; i < teamItem.length; i++) {
-        teamItem[i].classList.remove('team__item--active');
-      }
-      e.target.closest('.team__item').classList.add("team__item--active");
-    });
-
-
-    // //аккордеон закрытие
+    // // аккордеон
     // const teamList = document.querySelector(".team__list");
-    // const teamItem = document.querySelectorAll('.team__item');
+    // const teamItem = document.querySelectorAll(".team__item");
 
-    // for (let i = 0; i < teamItem.length; i++) {
-    //   teamItem[i].addEventListener("click", toggleClass)
-    // }
+    // teamList.addEventListener('click', function (e) {
+    //   e.preventDefault();
+    //   for (let i = 0; i < teamItem.length; i++) {
+    //     teamItem[i].classList.remove('team__item--active');
+    //   }
+    //   e.target.closest('.team__item').classList.add("team__item--active");
+    // });
 
-    // function toggleClass(e) {
-    //       e.preventDefault();
-    //     if (!e.target.classList.contains("team__item--active")) {
-    //       for (let i = 0; i < teamItem.length; i++ ) {
-      //         teamItem[i].classList.remove("team__item--active");
-    //       }
-    //       e.target.closest.classList.add("team__item--active");
-    //     } else {
-    //       e.target.closest.classList.remove("team__item--active");
-    //   };
-    // };
+
+    //аккордеон закрытие
+    const one = document.querySelectorAll('.team__item');
+
+    for (let i = 0; i < one.length; i++) {
+      one[i].addEventListener("click", toogleClass)
+    }
+
+    function toogleClass(e) {
+      e.preventDefault();
+      if (e.target.classList.contains("team__item--active") === false) {
+        for (let i = 0; i < one.length; i++) {
+          one[i].classList.remove("team__item--active");
+        }
+        e.target.classList.add("team__item--active");
+      } else {
+        e.target.classList.remove("team__item--active");
+      };
+    };
 
   </script>
 </body>
