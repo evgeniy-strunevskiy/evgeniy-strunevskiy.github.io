@@ -1621,3 +1621,45 @@ textarea {
   fill: #585858; }
   .social__svg:hover {
     fill: #ffffff; }
+
+.overlay {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(47, 50, 52, 0.99);
+  height: 100vh;
+  width: 100vw;
+  padding: 0.75rem 1.5625rem;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .overlay--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.overlay__container {
+  background: #ffffff;
+  padding: 50px 70px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }

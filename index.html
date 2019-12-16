@@ -1126,31 +1126,16 @@
     </div>
 
   </div>
-  .
+  <div class="overlay">
+    <div class="overlay__container">
+      <a href="#" class="overlay__close">X</a>
+      <button class="btn overlay__btn">Закрыть</button>
+    </div>
+  </div>
 
 
 
   <script>
-    //overlay
-    const openButton = document.querySelector('#openOverlay');
-    const overLayElement = document.querySelector('.overlay');
-
-    openButton.addEventListener('click', function () {
-      overLayElement.style.display = 'flex';
-    });
-
-    const closeElement = overLay.querySelector('.close');
-    closeElement.addEventListener('click', function () {
-      overLayElement.style.display = 'none';
-    });
-
-    overLayElement.addEventListener('click', e => {
-      if (e.target === overLayElement) {
-        closeElement.click();
-      }
-    });
-
-
     //Ввод номера телефона
     const phone = document.querySelector('#phone');
 
@@ -1179,7 +1164,8 @@
     //Валидация данных
     const myForm = document.querySelector('#myForm');
     const sendBtn = document.querySelector('#button-send');
-    const popup = document.querySelector('#popup');
+    const overLay = document.querySelector('.overlay');
+    const overLayBtn = document.querySelector('.overlay__btn');
 
     sendBtn.addEventListener('click', function (event) {
       event.preventDefault();
@@ -1198,7 +1184,11 @@
         xhr.send(JSON.stringify(data));
         xhr.addEventListener('load', () => {
           if (xhr.response.status) {
-            console.log('все ок!');
+            overLay.classList.add('overlay--active');
+            overLay.innerText = "Сообщение отправлено"
+          } else {
+            overLay.classList.add('overlay--active');
+            overLay.innerText = 'Произошла ошибка'
           }
         });
 
@@ -1229,43 +1219,19 @@
       return field.checkValidity();
     }
 
+    //Всплывающее окно 
+    const overLayClose = document.querySelector('.overlay__close');
+
+    overLayClose.addEventListener('click', function (e) {
+      overLay.style.display = 'none';
+    });
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Всплывающее меню
     const open = document.getElementById('screen-menu__open');
     const close = document.getElementById('menu-close');
     const hamburger = document.getElementById('hamburger__menu');
@@ -1278,38 +1244,6 @@
       hamburger.style.display = 'block';
     });
 
-    //слайдер
-    // const right = document.querySelector(".slider__arrow-right");
-    // const left = document.querySelector(".slider__arrow-left");
-    // const sliderList = document.querySelector(".slider__list");
-    // const computed = getComputedStyle(sliderList);
-    // console.log(computed);
-
-    // right.addEventListener("click", function (e) {
-    //   e.preventDefault();
-    //   let currentRight = parseInt(computed.right);
-
-    //   if (!currentRight) {
-    //     currentRight = 0;
-    //   }
-
-    //   if (currentRight < 3760) {
-    //     sliderList.style.right = currentRight + 940 + 'px';
-    //   }
-    // });
-
-    // left.addEventListener("click", function (e) {
-    //   e.preventDefault();
-    //   let currentRight = parseInt(computed.right);
-
-    //   if(!currentRight) {
-    //     currentRight = 0;
-    //   }
-
-    //   if (currentRight > 0) {
-    //     sliderList.style.right = currentRight - 940 + 'px';
-    //   }
-    // });    
 
     //Бесконечный слайдер
     const right = document.querySelector(".slider__arrow-right");
@@ -1359,7 +1293,7 @@
     //       e.preventDefault();
     //     if (!e.target.classList.contains("team__item--active")) {
     //       for (let i = 0; i < teamItem.length; i++ ) {
-    //         teamItem[i].classList.remove("team__item--active");
+      //         teamItem[i].classList.remove("team__item--active");
     //       }
     //       e.target.closest.classList.add("team__item--active");
     //     } else {
@@ -1367,7 +1301,29 @@
     //   };
     // };
 
+    // //слайдер
+    // // const right = document.querySelector(".slider__arrow-right");
+    // // const left = document.querySelector(".slider__arrow-left");
+    // // const sliderList = document.querySelector(".slider__list");
+    // // const computed = getComputedStyle(sliderList);
+    // // console.log(computed);
+
+    // // right.addEventListener("click", function (e) {
+    // // e.preventDefault();
+    // // let currentRight = parseInt(computed.right);
+
+    // // if (!currentRight) {
+    // // currentRight = 0;
+    // // }
+
+    // // if (currentRight < 3760) { // sliderList.style.right=currentRight + 940 + 'px' ; // } // }); //
+    //   left.addEventListener("click", function (e) { // e.preventDefault(); // let currentRight=parseInt(computed.right); //
+    //   if(!currentRight) { // currentRight=0; // } // if (currentRight> 0) {
+    //   // sliderList.style.right = currentRight - 940 + 'px';
+    //   // }
+    //   // });
   </script>
 </body>
+
 
 </html>
