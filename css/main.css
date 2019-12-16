@@ -1334,14 +1334,16 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  height: 520px; }
 
 .slider__elem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 940px; }
+  width: 940px;
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
     .slider__elem {
       -webkit-box-orient: vertical;
@@ -1383,6 +1385,9 @@ textarea {
       -ms-flex-align: center;
       align-items: center; } }
 
+.slider__img {
+  width: 460px; }
+
 .slider__text {
   font-family: Ubuntu;
   color: #ffffff;
@@ -1412,9 +1417,9 @@ textarea {
   font-family: Gagalin;
   color: #ffffff;
   height: 5rem;
-  width: 3.125rem;
+  width: 3.75rem;
   position: absolute;
-  bottom: -11%;
+  bottom: 0;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1437,8 +1442,8 @@ textarea {
 
 .slider__cal-digit {
   position: absolute;
-  top: 28%;
-  left: 23%; }
+  top: 30%;
+  left: 30%; }
 
 .lider__cal-text {
   font-size: 0.875rem; }
@@ -1459,7 +1464,7 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: -11%;
+  top: 0;
   left: 0; }
   .composition:hover .composition__drop-table {
     left: 5.625rem;
