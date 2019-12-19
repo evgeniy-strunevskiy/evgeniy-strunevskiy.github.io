@@ -140,44 +140,23 @@ function ready() {
   // });
 
 
-  // //аккордеон закрытие
-  // const one = document.querySelectorAll('.team__item');
-  // const teamName = document.querySelectorAll('.team__name');
-
-  // for (let i = 0; i < one.length; i++) {
-  //   one[i].addEventListener("click", toogleClass)
-  // }
-
-  // function toogleClass(e) {
-  //   e.preventDefault();
-  //   if (e.target.classList.contains("team__item--active") === false) {
-  //     for (let i = 0; i < one.length; i++) {
-  //       one[i].classList.remove("team__item--active");
-  //     }
-  //     e.target.classList.add("team__item--active");
-  //   } else {
-  //     e.target.classList.remove("team__item--active");
-  //   };
-  // };
-
-
   //аккордеон закрытие
   const one = document.querySelectorAll('.team__item');
   const teamName = document.querySelectorAll('.team__name');
 
-  for (let i = 0; i < teamName.length; i++) {
-    teamName[i].addEventListener("click", toogleClass)
+  for (let i = 0; i < one.length; i++) {
+    one[i].addEventListener("click", toogleClass)
   }
 
   function toogleClass(e) {
     e.preventDefault();
-    if (e.target.classList.contains("team__item--active") === false) {
+    if (e.target.closest('.team__item').classList.contains("team__item--active") === false) {
       for (let i = 0; i < one.length; i++) {
-        teamName[i].closest('.team__item').classList.remove("team__item--active");
+        one[i].closest('.team__item').classList.remove("team__item--active");
       }
-      teamName.closest('.team__item').classList.add("team__item--active");
+      e.target.closest('.team__item').classList.add("team__item--active");
     } else {
-      teamName.closest('.team__item').classList.remove("team__item--active");
+      e.target.closest('.team__item').classList.remove("team__item--active");
     };
   };
 
