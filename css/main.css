@@ -773,11 +773,10 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .accordeon-menu__item:hover .accordeon-menu__content {
-    max-width: 33.75rem;
-    background-color: rgba(47, 50, 52, 0.9); }
-  .accordeon-menu__item:hover .accordeon-menu__btn-text {
-    color: #f9b43b; }
+
+.accordeon-menu__item--active .accordeon-menu__content {
+  max-width: 33.75rem;
+  background-color: rgba(47, 50, 52, 0.9); }
 
 .accordeon-menu__btn {
   width: 5rem;
@@ -1443,7 +1442,8 @@ textarea {
   @media screen and (max-width: 768px) {
     .slider__cal {
       top: 0;
-      right: 0; } }
+      right: 0;
+      left: auto; } }
 
 .slider__cal-digit {
   position: absolute;

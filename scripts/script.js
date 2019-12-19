@@ -142,7 +142,6 @@ function ready() {
 
   //аккордеон закрытие
   const one = document.querySelectorAll('.team__item');
-  const teamName = document.querySelectorAll('.team__name');
 
   for (let i = 0; i < one.length; i++) {
     one[i].addEventListener("click", toogleClass)
@@ -160,6 +159,25 @@ function ready() {
     };
   };
 
+
+  //горизонтальный аккордеон закрытие
+  const accordeonMenuItem = document.querySelectorAll('.accordeon-menu__item');
+
+  for (let i = 0; i < accordeonMenuItem.length; i++) {
+    accordeonMenuItem[i].addEventListener("click", toogle)
+  }
+
+  function toogle(e) {
+    e.preventDefault();
+    if (e.target.closest('.accordeon-menu__item').classList.contains("accordeon-menu__item--active") === false) {
+      for (let i = 0; i < accordeonMenuItem.length; i++) {
+        accordeonMenuItem[i].closest('.accordeon-menu__item').classList.remove("accordeon-menu__item--active");
+      }
+      e.target.closest('.accordeon-menu__item').classList.add("accordeon-menu__item--active");
+    } else {
+      e.target.closest('.accordeon-menu__item').classList.remove("accordeon-menu__item--active");
+    };
+  };
 
 
 

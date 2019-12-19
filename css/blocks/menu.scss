@@ -23,20 +23,30 @@
 
 .accordeon-menu__item {
   display: flex;
-  &:hover {
-    .accordeon-menu__content {
-      max-width: rem(540px);
-      @include phones {
-      } 
-      background-color: rgba(47, 50, 52, 0.9);
-    }
-    .accordeon-menu__btn-text {
-      color: $yellow;
-    }
-  }
+
+  // &:hover {
+  //   .accordeon-menu__content {
+  //     max-width: rem(540px);
+
+  //     @include phones {}
+
+  //     background-color: rgba(47, 50, 52, 0.9);
+  //   }
+
+  //   .accordeon-menu__btn-text {
+  //     color: $yellow;
+  //   }
+  // }
 }
 
-.accordeon-menu__btn  {
+.accordeon-menu__item--active .accordeon-menu__content {
+  max-width: rem(540px);
+  background-color: rgba(47, 50, 52, 0.9);
+}
+
+
+
+.accordeon-menu__btn {
   width: rem(80px);
   position: relative;
   background-size: cover;
@@ -67,9 +77,11 @@
 
 .accordeon-menu__text {
   width: 540px;
+
   @include phones {
     width: calc(100vw - 210px);
   }
+
   color: $white;
   font-family: Ubuntu;
   padding: rem(60px) rem(30px);
