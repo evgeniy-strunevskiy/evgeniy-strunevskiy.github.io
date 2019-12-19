@@ -19,12 +19,12 @@
   }
 
   @include tablets {
-    top: -10%;
-    left: 18%;
+    top: 0%;
+    left: 0%;
   }
 
   @include phones {
-    top: -16%;
+    top: 0%;
     left: 0;
   }
 }

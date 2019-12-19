@@ -1286,12 +1286,17 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 29.6875rem;
-  width: 58.75rem;
-  width: 100%; }
+  background: #000; }
+  @media screen and (max-width: 768px) {
+    .slider_container {
+      max-width: 720px; } }
+  @media screen and (max-width: 480px) {
+    .slider_container {
+      min-width: 480px; } }
 
 .slider__arrow-left,
 .slider__arrow-right {
+  z-index: 1000;
   position: absolute;
   top: 50%; }
 
@@ -1336,6 +1341,9 @@ textarea {
   display: flex;
   position: relative;
   height: 520px; }
+  @media screen and (max-width: 768px) {
+    .slider__list {
+      height: 765px; } }
 
 .slider__elem {
   display: -webkit-box;
@@ -1346,20 +1354,21 @@ textarea {
   overflow: hidden; }
   @media screen and (max-width: 768px) {
     .slider__elem {
+      width: 702px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding: 0 12%;
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .slider__elem {
+      width: 454px; } }
 
 .slider__col {
+  background: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1371,14 +1380,14 @@ textarea {
   -ms-flex-pack: center;
   justify-content: center; }
   .slider__col--margin {
-    margin-top: 5%;
-    margin-left: 30px;
+    padding-top: 5%;
+    padding-left: 30px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1; }
     @media screen and (max-width: 768px) {
       .slider__col--margin {
-        margin-left: 0; } }
+        padding: 0 70px; } }
   @media screen and (max-width: 768px) {
     .slider__col {
       -webkit-box-align: center;
@@ -1386,7 +1395,8 @@ textarea {
       align-items: center; } }
 
 .slider__img {
-  width: 460px; }
+  max-width: 100%;
+  max-height: 100%; }
 
 .slider__text {
   font-family: Ubuntu;
@@ -1433,12 +1443,8 @@ textarea {
   align-items: center; }
   @media screen and (max-width: 768px) {
     .slider__cal {
-      top: -11%;
-      left: 73%; } }
-  @media screen and (max-width: 480px) {
-    .slider__cal {
-      top: -16%;
-      left: 86%; } }
+      top: 0;
+      right: 0; } }
 
 .slider__cal-digit {
   position: absolute;
@@ -1471,11 +1477,11 @@ textarea {
     opacity: 1; }
   @media screen and (max-width: 768px) {
     .composition {
-      top: -10%;
-      left: 18%; } }
+      top: 0%;
+      left: 0%; } }
   @media screen and (max-width: 480px) {
     .composition {
-      top: -16%;
+      top: 0%;
       left: 0; } }
 
 .composition__btn {
