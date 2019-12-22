@@ -5,10 +5,18 @@
   background-position: center center;
 }
 
+.features__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .features__list {
   display: flex;
   text-align: center;
   align-items: flex-start;
+
   @include phones {
     flex-direction: column;
     text-align: left;
@@ -23,6 +31,7 @@
 .features__item {
   flex: 1;
   margin-left: 2%;
+
   @include phones {
     display: flex;
     align-items: normal;
