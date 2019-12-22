@@ -1,4 +1,56 @@
 function ready() {
+  // //Вертикальный скролл Сабанцев
+  // const sections = $('.section');
+  // const display = $('.maincontent');
+
+  // const performTransition = sectionEq => {
+  //   const position = sectionEq * -100;
+
+  //   sections
+  //     .eq(sectionEq)
+  //     .addClass('active')
+  //     .siblings()
+  //     .removeClass('active');
+
+  //   display.css({
+  //     transform: `translateY(${position}%)`
+  //   });
+
+  // }
+
+  // const scrollToSection = direction => {
+  //   const activeSection = sections.filter('.active');
+  //   const nextSection = activeSection.next();
+  //   const prevSection = activeSection.prev();
+
+  //   if (direction === 'next' && nextSection.length) {
+  //     performTransition(nextSection.index());
+  //   }
+
+  //   if (direction === 'prev' && prevSection.length) {
+  //     performTransition(prevSection.index());
+  //   }
+  // };
+
+  // $(window).on("wheel", e => {
+  //   const deltaY = e.originalEvent.deltaY;
+
+  //   if (deltaY > 0) {
+  //     scrollToSection("next");
+  //   }
+
+  //   if (deltaY < 0) {
+  //     scrollToSection("prev");
+  //   }
+  // });
+
+  //Вертикальный скролл
+  $('#fullpage').fullpage();
+
+
+
+
+
   //Ввод номера телефона
   const phone = document.querySelector('#phone');
 
@@ -181,12 +233,12 @@ function ready() {
 
 
   //Карта
-  
+
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-      center: [52.09058992970443,23.70227846134666],
+      center: [52.09058992970443, 23.70227846134666],
       zoom: 9
-    },{
+    }, {
       searchControlProvider: 'yandex#search'
     }),
 
@@ -235,11 +287,8 @@ function ready() {
     myMap.geoObjects
       .add(myPlacemark)
       .add(myPlacemarkWithContent);
-      myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('scrollZoom');
   });
-
-
-
 
 
 };

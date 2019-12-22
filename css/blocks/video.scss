@@ -1,0 +1,16 @@
+.video {
+  background-image: url(../../pic/content/bg-video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.video__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__frame {
+  width: 660px;
+}

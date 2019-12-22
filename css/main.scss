@@ -1,10 +1,12 @@
-$yellow: #f9b43b; 
+$yellow: #f9b43b;
 $white: #ffffff;
 $orange: #e45028;
 
 @function rem($px) {
-  @return $px / 16px + 0rem;
-};
+  @return $px / 16px+0rem;
+}
+
+;
 
 @import './blocks/media.scss';
 
@@ -31,4 +33,5 @@ $orange: #e45028;
 @import './blocks/contacts.scss';
 @import './blocks/social.scss';
 @import './blocks/overlay.scss';
-
+// @import './blocks/fullpage.scss';
+@import './blocks/video.scss';
