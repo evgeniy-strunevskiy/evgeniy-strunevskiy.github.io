@@ -18,9 +18,10 @@
   margin-bottom: 4px;
   position: relative;
 
-  &--active {
-    border-color: $white;
-  }
+}
+
+.active {
+  border-color: $white;
 }
 
 .fixed-menu__dot {
