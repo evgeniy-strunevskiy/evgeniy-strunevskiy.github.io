@@ -1,6 +1,9 @@
+html {
+  height: auto !important; }
+
 html,
 body {
-  height: auto !important;
+  height: 100%;
   font-size: 16px; }
   @media screen and (max-width: 768px) {
     html,
@@ -469,7 +472,10 @@ template {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media screen and (max-width: 768px) {
     .promo__container {
       -webkit-box-orient: vertical;

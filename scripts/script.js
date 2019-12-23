@@ -45,7 +45,9 @@ function ready() {
   // });
 
   //Вертикальный скролл
-  $('#fullpage').fullpage();
+  $('#fullpage').fullpage({
+    menu: '#menu',
+  });
 
 
 

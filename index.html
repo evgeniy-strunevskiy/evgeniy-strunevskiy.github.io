@@ -27,43 +27,43 @@
         </div>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">
+            <li class="nav__item" data-menuanchor="features">
+              <a href="#features" class="nav__link">
                 О НАС
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
+            <li class="nav__item" data-menuanchor="slider">
+              <a href="#slider" class="nav__link">
                 БУРГЕРЫ
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
+            <li class="nav__item" data-menuanchor="team">
+              <a href="#team" class="nav__link">
                 КОМАНДА
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
+            <li class="nav__item" data-menuanchor="menu">
+              <a href="#menu" class="nav__link">
                 МЕНЮ
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
+            <li class="nav__item" data-menuanchor="reviews">
+              <a href="#reviews" class="nav__link">
                 ОТЗЫВЫ
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
+            <li class="nav__item" data-menuanchor="video">
+              <a href="#video" class="nav__link">
                 КАК МЫ РАБОТАЕМ
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
+            <li class="nav__item" data-menuanchor="map">
+              <a href="#map" class="nav__link">
                 КОНТАКТЫ
               </a>
             </li>
-            <li class="nav__ord">
-              <a href="#" class="btn">
+            <li class="nav__ord" data-menuanchor="form">
+              <a href="#form" class="btn">
                 ЗАКАЗАТЬ
               </a>
             </li>
@@ -72,7 +72,7 @@
         <div class="screen-menu" id="screen-menu__open"></div>
       </div>
     </header>
-    <section class="section promo active">
+    <section class="section promo" data-anchor="promo">
 
       <div class="container promo__container">
         <div class="promo__img">
@@ -92,7 +92,7 @@
       </a>
     </section>
 
-    <section class="section features">
+    <section class="section features" data-anchor="features">
       <div class="container features__container">
         <div class="features__name">
           <h2 class="title title--black">МЫ ЛУЧШИЕ</h2>
@@ -146,7 +146,7 @@
       </div>
     </section>
 
-    <section class="section slider">
+    <section class="section slider" data-anchor="slider">
       <div class="container slider_container">
         <a href="#" class="slider__arrow-left" id="slider__arrow-left" aria-label="Предыдущий слайдер">
           <svg class="slider__svg slider__svg--left" width='30px' height='15px'>
@@ -680,7 +680,7 @@
       </div>
     </section>
 
-    <section class="section team">
+    <section class="section team" data-anchor="team">
       <div class="team__content">
         <h2 class="title title--team">КОМАНДА</h2>
 
@@ -761,7 +761,7 @@
       </div>
     </section>
 
-    <section class="section menu">
+    <section class="section menu" data-anchor="menu">
       <h2 class="title title--white">МЕНЮ</h2>
       <div class="accordeon-menu">
         <ul class="accordeon-menu__list">
@@ -826,7 +826,7 @@
       </div>
     </section>
 
-    <section class="section reviews">
+    <section class="section reviews" data-anchor="reviews">
       <ul class="reviews__list">
         <li class="reviews__item">
           <img src="./pic/reviews/one.png" alt="" class="reviews__img">
@@ -929,13 +929,13 @@
       </ul>
     </section>
 
-    <section class="section video">
+    <section class="section video" data-anchor="video">
       <div class="container video__container">
         <video src="./video/video-burger.mp4" class="video__frame" controls></video>
       </div>
     </section>
 
-    <section class="section form">
+    <section class="section form" data-anchor="form">
       <div class="container form_container">
         <h2 class="title title_form">ЗАКАЖИТЕ ДОСТАВКУ</h2>
         <div class="order-form">
@@ -1025,7 +1025,7 @@
       </div>
     </section>
 
-    <section class="section map">
+    <section class="section map" data-anchor="map">
       <div class="mape" id="map"></div>
       <footer class="footer">
         <div class="container footer_container">
@@ -1089,63 +1089,31 @@
       </footer>
     </section>
 
-
-    <ul class="fixed-menu">
-      <li class="fixed-menu__item fixed-menu__item--active">
-        <a class="fixed-menu__dot " href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-    </ul>
-
     <div class="hamburger__menu" id="hamburger__menu">
       <div class="hamburger__menu-logo">
-        <!-- <img src="./pic/icons/logo.svg" alt=""> -->
         <svg preserveAspectRatio="xMaxYMax meet" class="logo__svg" width='100px' height='75px'>
           <use xlink:href='./pic/icons/sprite.svg#logo'></use>
         </svg>
       </div>
       <nav class="hamburger__nav">
         <ul class="hamburger__list">
-          <li class="hamburger__item">
-            <a href="#" class="hamburger__link">О НАС</a>
+          <li class="hamburger__item" data-anchor="features">
+            <a href="#features" class="hamburger__link">О НАС</a>
           </li>
-          <li class="hamburger__item">
-            <a href="#" class="hamburger__link">БУРГЕРЫ</a>
+          <li class="hamburger__item" data-anchor="slider">
+            <a href="#slider" class="hamburger__link">БУРГЕРЫ</a>
           </li>
-          <li class="hamburger__item">
-            <a href="#" class="hamburger__link">КОМАНДА</a>
+          <li class="hamburger__item" data-anchor="team">
+            <a href="#team" class="hamburger__link">КОМАНДА</a>
           </li>
-          <li class="hamburger__item">
-            <a href="#" class="hamburger__link">МЕНЮ</a>
+          <li class="hamburger__item" data-anchor="menu">
+            <a href="#menu" class="hamburger__link">МЕНЮ</a>
           </li>
-          <li class="hamburger__item">
-            <a href="#" class="hamburger__link">ОТЗЫВЫ</a>
+          <li class="hamburger__item" data-anchor="reviews">
+            <a href="#reviews" class="hamburger__link">ОТЗЫВЫ</a>
           </li>
-          <li class="hamburger__item">
-            <a href="#" class="hamburger__link">КОНТАКТЫ</a>
+          <li class="hamburger__item" data-anchor="map">
+            <a href="#map" class="hamburger__link">КОНТАКТЫ</a>
           </li>
         </ul>
       </nav>
@@ -1154,15 +1122,42 @@
         </div>
       </div>
     </div>
-
   </div>
+  <ul class="fixed-menu" id="menu">
+    <li class="fixed-menu__item" data-anchor="promo">
+      <a class="fixed-menu__dot fixed-menu__dot--active" href="#promo" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="features">
+      <a class="fixed-menu__dot" href="#features" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="slider">
+      <a class="fixed-menu__dot" href="#slider" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="team">
+      <a class="fixed-menu__dot" href="#team" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="menu">
+      <a class="fixed-menu__dot" href="#menu" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="reviews">
+      <a class="fixed-menu__dot" href="#reviews" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="video">
+      <a class="fixed-menu__dot" href="#video" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="form">
+      <a class="fixed-menu__dot" href="#form" aria-label=""></a>
+    </li>
+    <li class="fixed-menu__item" data-anchor="map">
+      <a class="fixed-menu__dot" href="#map" aria-label=""></a>
+    </li>
+  </ul>
   <div class="overlay">
     <div class="overlay__container">
       <a href="#" class="overlay__close">X</a>
       <button class="btn overlay__btn">Закрыть</button>
     </div>
   </div>
-
 </body>
 
 </html>

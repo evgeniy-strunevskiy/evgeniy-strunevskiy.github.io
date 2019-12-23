@@ -1,6 +1,10 @@
+html {
+  height: auto !important;
+}
+
 html,
 body {
-  height: auto !important;
+  height: 100%;
   font-size: 16px;
 
   @include tablets {
