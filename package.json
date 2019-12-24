@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgeniy-strunevskiy/burger-2-week.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evgeniy-strunevskiy/burger-2-week.github.io/issues"
+  },
+  "homepage": "https://github.com/evgeniy-strunevskiy/burger-2-week.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

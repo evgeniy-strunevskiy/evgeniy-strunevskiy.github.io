@@ -1,4 +1,67 @@
 function ready() {
+  //Попап в отзывах
+  const btn = document.querySelectorAll('.reviews__btn');
+  const reviewsText = document.querySelector('.reviews__text');
+  const outer = document.querySelector('.reviews__hover');
+  const title = document.querySelector('.reviews__name');
+
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener("click", openOverlay)
+    console.log(btn[1]);
+  };
+
+
+  function openOverlay(e) {
+    e.preventDefault();
+    const targetElem = e.target;
+
+    const overlaybackground = document.createElement("div");
+    overlaybackground.classList.add("overlaybackground");
+    outer.appendChild(overlaybackground);
+
+    const overlayContainer = document.createElement("div");
+    overlayContainer.classList.add("overlayContainer");
+    overlaybackground.appendChild(overlayContainer);
+
+    const overlayFlex = document.createElement("div");
+    overlayFlex.classList.add("overlayflex");
+    overlayContainer.appendChild(overlayFlex);
+
+    const overlayTitle = document.createElement("div");
+    overlayTitle.classList.add("overlayTitle");
+    overlayTitle.innerHTML = targetElem.closest('.outer').querySelector('.reviews__name').innerHTML;
+    overlayFlex.appendChild(overlayTitle);
+
+    const overlayClose = document.createElement("a");
+    overlayClose.classList.add("overlayclose");
+    overlayClose.textContent = 'x';
+    overlayFlex.appendChild(overlayClose);
+    overlayFlex.href = "#";
+    overlayFlex.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (e.target === overlayClose) {
+        outer.removeChild(overlaybackground);
+      }
+
+    });
+
+    const overlayElement = document.createElement("div");
+    overlayElement.classList.add("overlay");
+    overlayElement.innerHTML = targetElem.closest('.outer').querySelector('.reviews__text').innerHTML;
+    overlayContainer.appendChild(overlayElement);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   // //Вертикальный скролл Сабанцев
   // const sections = $('.section');
   // const display = $('.maincontent');
