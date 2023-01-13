@@ -1,0 +1,10 @@
+:root {
+  --background-color: rgb(44, 43, 45);
+  --font-color: rgb(51, 60, 73);
+  --link-color: rgb(88, 110, 211);
+  --inversion-color: rgb(213, 214, 209);
+  --alternative-color: rgb(57, 58, 61);
+  --section-color: rgb(212, 127, 30);
+  --active-color:rgb(180, 110, 29);
+  --hover-color: rgb(196, 118, 30);
+}

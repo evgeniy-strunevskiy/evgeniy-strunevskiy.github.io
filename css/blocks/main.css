@@ -1,0 +1,21 @@
+.page {
+  grid-area: page;
+  padding: 90px 0px 30px 0px;
+}
+
+.page_section {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--inversion-color);
+}
+
+.page_section__1 {
+  background-color: var(--section-color);
+}
+.page_section__2 {
+  background-color: var(--link-color);
+}
+.page_section__3 {
+  background-color: var(--alternative-color);
+}

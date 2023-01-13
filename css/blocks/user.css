@@ -1,0 +1,20 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  z-index: 5;
+}
+
+.user_avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.user_avatar img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

@@ -1,0 +1,23 @@
+.menu_list {
+  display: flex;
+  align-items: center;
+}
+
+.menu_item {
+  position: relative;
+  margin: 0 0 0 20px;
+  padding: 10px 0;
+}
+
+.menu_link {
+  font-size: 18px;
+  color: var(--inversion-color)
+}
+
+.menu_link:hover {
+  color: var(--hover-color);
+}
+
+.menu_link:active {
+  color: var(--active-color);
+}
