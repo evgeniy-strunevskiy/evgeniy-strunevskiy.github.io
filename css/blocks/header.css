@@ -10,6 +10,10 @@
   background-color: var(--background-color);
 }
 
+.header_avatar {
+  z-index: 5;
+}
+
 .header_container {
   display: flex;
   padding: 0 30px;
