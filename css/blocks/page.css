@@ -1,0 +1,136 @@
+.page {
+  /* grid-area: page; */
+  flex: 1 0 auto;
+  padding: 90px 0px 0px 0px;
+}
+
+.page_section {
+  padding: 5%;
+  height: 100vh;
+  margin: 0 auto;
+  color: var(--inversion-color);
+
+}
+
+.page_section__1 {
+  background-color: var(--section-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+.page_section__2 {
+  background-color: var(--link-color);
+  display: flex;
+  flex-direction: column;
+}
+.page_section__3 {
+  background-color: var(--alternative-color);
+}
+
+.page_section__1 {
+  background-image: 
+  linear-gradient(to top, rgb(0 0 0 / 70%), 
+  rgb(18 10 1 / 30%)), url(/images/background-4.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+.page_section__2 {
+  background-image: 
+  linear-gradient(to top, rgb(0 0 0 / 70%), 
+  rgb(18 10 1 / 30%)), url(/images/background-2.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+
+.page_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_profession {
+  font-size: 12px;
+  text-align: right;
+  padding: 0 20px 0 0;
+}
+
+.page_main-title {
+  border-left: 5px solid var(--inversion-color);
+  font-size: 64px;
+  font-weight: bold;
+  line-height: .8;
+  padding: 0 0 0 20px;
+}
+
+.page_title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.page_avatar {
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.page_photo {
+  width: 100%;
+}
+
+.page_skills {
+  height: 100%;
+}
+
+.page_skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  align-items: baseline;
+}
+
+.page_skills-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.page_skill {
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--section-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .page_skill__react {
+  width: 37vh;
+  height: 37vh;
+}
+.page_skill__javascript {
+  width: 35vh;
+  height: 35vh;
+}
+.page_skill__typescript {
+  width: 20vh;
+  height: 20vh;
+}
+.page_skill__html {
+  width: 20vh;
+  height: 20vh;
+}
+.page_skill__sass {
+  width: 14vh;
+  height: 14vh;
+}
+.page_skill__redux {
+  width: 27vh;
+  height: 27vh;
+}
+.page_skill__webpack {
+  width: 20vh;
+  height: 20vh;
+} */

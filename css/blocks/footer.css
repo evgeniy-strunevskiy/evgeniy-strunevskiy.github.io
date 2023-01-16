@@ -1,4 +1,4 @@
 .footer {
-  grid-area: footer;
+  flex: 0 0 auto;
   background: gray;
 }
