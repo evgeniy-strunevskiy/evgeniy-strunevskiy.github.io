@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   gap: 5%;
+  width: 100%;
 }
 .page_section__2 {
   background-color: var(--link-color);
@@ -66,7 +67,7 @@
 
 .page_title {
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .page_avatar {
