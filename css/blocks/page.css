@@ -29,6 +29,9 @@
 .page_section__3 {
   background-color: var(--alternative-color);
 }
+.page_section__5 {
+  background-color: var(--alternative-color);
+}
 
 .page_section__1 {
   background-image: 
@@ -38,6 +41,13 @@
   background-size: cover, cover;
 }
 .page_section__2 {
+  background-image: 
+  linear-gradient(to top, rgb(0 0 0 / 70%), 
+  rgb(18 10 1 / 30%)), url(/images/background-2.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+.page_section__4 {
   background-image: 
   linear-gradient(to top, rgb(0 0 0 / 70%), 
   rgb(18 10 1 / 30%)), url(/images/background-2.jpg);

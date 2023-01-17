@@ -1,0 +1,22 @@
+.education {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.education_list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  
+}
+
+.course_name {
+  font-size: 18px;
+}
+.course_career {
+  font-weight: bold;
+  font-size: 22px;
+}
+

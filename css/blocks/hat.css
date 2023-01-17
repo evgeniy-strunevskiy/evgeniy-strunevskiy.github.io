@@ -1,0 +1,11 @@
+.hat {
+  width: 80%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: -5;
+}
+
+.hat-img {
+  width: 100%;
+}
