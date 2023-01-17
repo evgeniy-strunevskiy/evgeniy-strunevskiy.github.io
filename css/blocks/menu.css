@@ -87,8 +87,13 @@
 }
 
 .menu_link {
-  font-size: 18px;
-  color: var(--inversion-color)
+  font-size: 16px;
+  color: var(--inversion-color);
+  transition: all .3s;
+}
+
+.menu_link__active {
+  color: var(--active-color);
 }
 
 .menu_link:hover {

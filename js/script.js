@@ -14,10 +14,8 @@ if (menuLinks.length > 0) {
     ) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
       const gotoBlockValue =
-        gotoBlock.getBoundingClientRect().top +
-        scrollY -
+        gotoBlock.getBoundingClientRect().top + scrollY -
         document.querySelector("header").offsetHeight;
-      console.log(gotoBlock.getBoundingClientRect().top);
       if (iconMenu.classList.contains("_active")) {
         document.body.classList.remove("_lock");
         iconMenu.classList.remove("_active");
@@ -27,6 +25,10 @@ if (menuLinks.length > 0) {
         top: gotoBlockValue,
         behavior: "smooth",
       });
+      menuLinks.forEach(link => {
+        link.classList.remove("menu_link__active");
+      });
+      menuLink.classList.add("menu_link__active")
       e.preventDefault();
     }
   }

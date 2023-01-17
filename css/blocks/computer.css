@@ -1,4 +1,4 @@
-.hat {
+.computer {
   width: 80%;
   position: absolute;
   top: 30%;
@@ -6,6 +6,6 @@
   z-index: -5;
 }
 
-.hat-img {
+.computer-img {
   width: 100%;
 }

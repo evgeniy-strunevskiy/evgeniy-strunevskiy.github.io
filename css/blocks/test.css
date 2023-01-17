@@ -1,0 +1,13 @@
+.test_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.test_year {
+  color: var(--section-color);
+  font-size: 36px;
+}
+
+.test_description {
+  font-weight: bold;
+}
