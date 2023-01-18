@@ -1,10 +1,10 @@
 
 
-const sliderImages = document.querySelectorAll('.slider__img');
-const sliderLine = document.querySelector('.slider__line');
-const sliderDots = document.querySelectorAll('.slider__dot');
-const sliderBtnNext = document.querySelector('.slider__btn-next');
-const sliderBtnPrev = document.querySelector('.slider__btn-prev');
+const sliderImages = document.querySelectorAll('.slider_img');
+const sliderLine = document.querySelector('.slider_line');
+const sliderDots = document.querySelectorAll('.slider_dot');
+const sliderBtnNext = document.querySelector('.slider_btn-next');
+const sliderBtnPrev = document.querySelector('.slider_btn-prev');
 
 let sliderCount = 0;
 let sliderWidth;
