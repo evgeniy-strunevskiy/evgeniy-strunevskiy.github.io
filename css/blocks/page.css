@@ -1,6 +1,6 @@
 .page {
   flex: 1 0 auto;
-  padding: 90px 0px 0px 0px;
+  /* padding: 90px 0px 0px 0px; */
 }
 
 .page_section {
@@ -142,4 +142,11 @@
 .page_skill__webpack {
   width: 14vh;
   height: 14vh;
+}
+
+@media (max-width: 1200px) {
+  .page_skill__javascript {
+    width: 25vh;
+    height: 25vh;
+  }
 }

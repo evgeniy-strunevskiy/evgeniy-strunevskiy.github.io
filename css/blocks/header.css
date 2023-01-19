@@ -4,10 +4,8 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: li;
   padding: 10px;
   background-color: var(--background-color);
-  /* grid-area: header; */
   flex: 0 0 auto;
 }
 

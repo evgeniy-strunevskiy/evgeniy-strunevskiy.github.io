@@ -9,3 +9,13 @@
 .computer-img {
   width: 100%;
 }
+
+@media (max-width: 1200px) {
+  .computer {
+    width: 66%;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    z-index: -5;
+  }
+}

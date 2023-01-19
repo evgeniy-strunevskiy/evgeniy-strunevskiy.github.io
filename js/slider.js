@@ -2,14 +2,17 @@
 
 const sliderImages = document.querySelectorAll('.slider_img');
 const sliderLine = document.querySelector('.slider_line');
-const sliderDots = document.querySelectorAll('.slider_dot');
 const sliderBtnNext = document.querySelector('.slider_btn-next');
 const sliderBtnPrev = document.querySelector('.slider_btn-prev');
 
 let sliderCount = 0;
 let sliderWidth;
 
-window.addEventListener('resize', showSlide);
+window.addEventListener('resize', function(){
+    console.log('resize')
+    showSlide()
+});
+
 
 showSlide();
 
@@ -19,8 +22,13 @@ sliderBtnPrev.addEventListener('click', prevSlide);
 
 function showSlide() {
     sliderWidth = document.querySelector('.slider').offsetWidth;
+    console.log(sliderImages.length)
     sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
-    sliderImages.forEach(item => item.style.width = sliderWidth + 'px');
+    console.log('slider-width: ', sliderLine.style.width)
+    sliderImages.forEach(item => {
+        item.style.width = sliderWidth + 'px'
+        console.log('item-width: ',item.style.width)
+    });
 
     rollSlider();
 }

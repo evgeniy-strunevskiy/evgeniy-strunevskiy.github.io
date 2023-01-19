@@ -1,9 +1,8 @@
-.slider{
+.slider {
   position: relative;
-  max-width: 1200px;
+  max-width: 80%;
   overflow: hidden;
-  margin: 0 20px;
-  align-self: center;
+  margin: 0 auto;
 }
 
 .slider_line{
@@ -26,8 +25,8 @@
   transform: translateY(-50%);
 }
 
-@media (max-width: 850px) {
-  .slider_btn-next img, .slider__btn-prev img {
+@media (max-width: 1200px) {
+  .slider_btn-next img, .slider_btn-prev img {
       width: calc(20px + (50 - 20) * ((100vw - 320px) / (850 - 320)));
   }
 }
