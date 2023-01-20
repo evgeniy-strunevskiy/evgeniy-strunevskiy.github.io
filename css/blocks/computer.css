@@ -1,8 +1,8 @@
 .computer {
-  width: 83%;
+  width: 54%;
   position: absolute;
-  top: 30%;
-  left: 30%;
+  left: 33%;
+  top: 40%;
   z-index: -5;
 }
 
@@ -10,12 +10,48 @@
   width: 100%;
 }
 
+@media (max-width: 1800px) {
+  .computer {
+    width: 52%;
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    z-index: -5;
+  }
+}
 @media (max-width: 1200px) {
   .computer {
-    width: 66%;
+    width: 46%;
     position: absolute;
-    top: 30%;
-    left: 55%;
+    left: 62%;
+    top: 70%;
+    z-index: -5;
+  }
+}
+@media (max-width: 992px) {
+  .computer {
+    width: 46%;
+    position: absolute;
+    left: 70%;
+    top: 71%;
+    z-index: -5;
+  }
+}
+@media (max-width: 768px) {
+  .computer {
+    width: 46%;
+    position: absolute;
+    left: 83%;
+    top: 85%;
+    z-index: -5;
+  }
+}
+@media (max-width: 480px) {
+  .computer {
+    width: 46%;
+    position: absolute;
+    left: 83%;
+    top: 91%;
     z-index: -5;
   }
 }
