@@ -6,11 +6,26 @@
 .contacts_list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 5%;
 }
 
 .contacts_item {
-  flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+@media (max-width: 992px) {
+  .contacts_list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .contacts_list {
+    flex-direction: column;
+    align-items: flex-start
+    ;
+  }
 }
