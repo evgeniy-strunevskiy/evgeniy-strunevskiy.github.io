@@ -1,0 +1,36 @@
+.skills_title {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+
+@media (max-width: 1200px) {
+  .skills-list {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .skills-list {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .skills_title {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+}

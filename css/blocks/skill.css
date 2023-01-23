@@ -1,0 +1,45 @@
+.skill {
+  width: 11vw;
+  height: 11vw;
+  background-color: var(--section-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill__react {
+  width: 18vw;
+  height: 18vw;
+}
+
+.skill__redux {
+  width: 16vw;
+  height: 16vw;
+}
+
+.skill__javascript {
+  width: 21vw;
+  height: 21vw;
+}
+.skill__typescript {
+  width: 14vw;
+  height: 14vw;
+}
+.skill__html {
+  width: 16vw;
+  height: 16vw;
+}
+.skill__git {
+  width: 14vw;
+  height: 14vw;
+}
+.skill__sass {
+  width: 14vw;
+  height: 14vw;
+}
+
+.skill__webpack {
+  width: 18vw;
+  height: 18vw;
+}

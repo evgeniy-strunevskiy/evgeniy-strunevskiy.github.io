@@ -93,83 +93,11 @@
   width: 100%;
 }
 
-.skills_title {
-  font-size: 64px;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 320px) {
-  .skills_title {
-    font-size: 48px;
-    margin-bottom: 24px;
-  }
-}
-
-.page_skills-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.page_skills_row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} 
-
-.page_skill {
-  width: 11vw;
-  height: 11vw;
-  background-color: var(--section-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page_skill__react {
-  width: 18vw;
-  height: 18vw;
-}
-
-.page_skill__redux {
-  width: 16vw;
-  height: 16vw;
-}
-
-.page_skill__javascript {
-  width: 21vw;
-  height: 21vw;
-}
-.page_skill__typescript {
-  width: 14vw;
-  height: 14vw;
-}
-.page_skill__html {
-  width: 16vw;
-  height: 16vw;
-}
-.page_skill__git {
-  width: 14vw;
-  height: 14vw;
-}
-.page_skill__sass {
-  width: 14vw;
-  height: 14vw;
-}
-
-.page_skill__webpack {
-  width: 18vw;
-  height: 18vw;
-}
-
 
 @media (max-width: 1200px) {
   .page_section__1 {
     gap: 25px;
     padding: 25% 5% 10% 5%;
-  }
-  .page_skills-list {
-    font-size: 13px;
   }
 }
 
@@ -198,9 +126,6 @@
   .page_main-title {
     font-size: 36px;
     border-left: none;
-  }
-  .page_skills-list {
-    font-size: 8px;
   }
 }
 @media (max-width: 320px) {
