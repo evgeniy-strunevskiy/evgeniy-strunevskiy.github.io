@@ -55,6 +55,10 @@
   margin-bottom: 40px;
 }
 
+.page_title__skills {
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .page_section__1 {
     padding: 25% 5% 10% 5%;
