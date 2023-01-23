@@ -22,9 +22,7 @@ sliderBtnPrev.addEventListener('click', prevSlide);
 
 function showSlide() {
     sliderWidth = document.querySelector('.slider').offsetWidth;
-    console.log(sliderImages.length)
     sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
-    console.log('slider-width: ', sliderLine.style.width)
     sliderImages.forEach(item => {
         item.style.width = sliderWidth + 'px'
         console.log('item-width: ',item.style.width)
@@ -37,7 +35,7 @@ function showSlide() {
 function nextSlide() {
     sliderCount++;
     if (sliderCount >= sliderImages.length) sliderCount = 0;
-
+    
     rollSlider();
 }
 
